@@ -1,0 +1,119 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    background-color: #f2ede7;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main .sp01main {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 8rem;
+    padding-top: 12rem;
+}
+
+main .sp01 h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+main .sp02 {
+    margin-top: -5rem;
+    margin-bottom: -10rem;
+}
+
+main .sp02 h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+    main .sp01main {
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 6rem;
+    }
+
+    main .sp01 h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    main .sp02 h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .sp01main {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #bd0036;
+        color: white;
+    }
+}
+
+/* *****以下はスマホ版メディアクエリ***** */
+
+@media screen and (max-width: 750px) {
+    main .sp01main {
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 6rem;
+    }
+
+    main .sp01 h2 {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    main .sp02 {
+        margin-top: -5rem;
+        margin-bottom: -17rem;
+    }
+
+    main .sp02 h2 {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main .sp01main {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 3rem;
+    }
+}

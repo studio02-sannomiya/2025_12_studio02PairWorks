@@ -1,0 +1,152 @@
+#home {
+    margin-top: 100px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 730px;
+    width: 100%;
+}
+
+.swiper-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper,
+.swiper-slide > div {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide.sw-1 > div {
+    background: url("../../images/slider/sliderimage01.jpg") center center / cover no-repeat;
+}
+
+.swiper-slide.sw-2 > div {
+    background: url("../../images/slider/sliderimage02.png") center center / cover no-repeat;
+}
+
+.swiper-slide.sw-3 > div {
+    background: url("../../images/slider/sliderimage03.jpg") center center / cover no-repeat;
+}
+
+.swiper-slide.sw-4 > div {
+    background: url("../../images/slider/sliderimage04.jpg") center center / cover no-repeat;
+}
+
+.swiper-slide.sw-5 > div {
+    background: url("../../images/slider/sliderimage05.jpg") center center / cover no-repeat;
+}
+
+@keyframes zoomUp {
+    /* ズームアップで1.15倍させる指定 */
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.swiper-slide-active > div,
+.swiper-slide-duplicate-active > div,
+.swiper-slide-prev > div {
+    animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.topinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.topinner img {
+    /* align-self: flex-start; */
+    width: 180px;
+    max-width: 180px;
+}
+
+.topinner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.topinner h1 {
+    color: var(--textcolor);
+    font-size: 2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    align-self: flex-start;
+    margin-bottom: 80px;
+    padding-bottom: 5rem;
+}
+
+/* .topinner h1.active {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.fixed-reservation {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+    transition: opacity 0.3s ease;
+}
+
+/* ハンバーガーメニュー表示時に予約ボタンを非表示にする */
+body.drawer-open .fixed-reservation {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 900px) {
+    #home {
+        margin-top: 0;
+    }
+
+    header ul.open {
+        padding: 5rem 0;
+    }
+
+    .topinner {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .topinner img {
+        align-self: center;
+        max-width: 180px;
+        margin-bottom: 30px;
+    }
+
+    .topinner h1 {
+        align-self: center;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    /* .reservation-btn {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    } */
+}

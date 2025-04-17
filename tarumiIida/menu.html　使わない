@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>兎の湯</title>
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&familyght@100..900&family=Nanum+Gothic&family=Zen+Maru+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <script src="js/script.js"></script>
+
+    </head>
+    <body>
+        <main>
+            <section id="ofuro-kasou">
+                <div id="kasou-wrapper">
+                <div id="close"></div>
+                <div id="kasou-wrap">
+                    <div class="yuge">
+                        <div id="jetbus">
+                            <img src="images/ofuro3.webp" alt="ジェットバス" />
+                        </div>
+                        <div id="oyu-shousai1">
+                            <div class="oyu">
+                                <h4>ジェットバス</h4>
+                                <p class="komidashi">～強力な水流でリフレッシュ～</p>
+                                <p>
+                                    勢いのあるジェット水流が全身を心地よくマッサージし、血行を促進。肩や腰、脚など、疲れがたまりやすい部分をしっかりほぐし、スッキリとした爽快感を味わえます。運動後やリラックスしたいときにぴったりのお風呂です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yuge">
+                        <div id="oyu-shousai2">
+                            <div id="oyu2">
+                                <h4>薬湯（週替わり）</h4>
+                                <p class="komidashi">～四季を感じる癒しの湯～</p>
+                                <p>
+                                    週ごとに異なる薬湯を楽しめる、特別な浴槽。
+                                    季節に合わせた天然の薬草やアロマを使用し、 心と体を優しく包み込みます。
+                                    冷え対策やリラックス効果、リフレッシュなど、 効能もさまざま。
+                                    訪れるたびに異なる香りと湯ざわりをお楽しみください。
+                                </p>
+                            </div>
+                        </div>
+                        <div id="yakuyu">
+                            <img src="images/ofuro4.jpg" alt="薬湯" />
+                        </div>
+                    </div>
+                </div>
+                <div id="ahiru">
+                    <img src="images/ahiru.png" alt="アヒル" />
+                </div>
+            </div>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

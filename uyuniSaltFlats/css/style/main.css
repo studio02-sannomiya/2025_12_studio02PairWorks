@@ -1,0 +1,1263 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    background-color: #f2ede7;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main .sec01 {
+    margin-top: 208px;
+}
+
+main .sec01 .left-line {
+    border-left: 5px solid #bd0036;
+    padding-left: 1rem;
+}
+
+main .sec01 .sec01cap01 {
+    display: flex;
+    margin-bottom: 13rem;
+}
+
+main .sec01 .sec01cap01 .sec01cap01ov {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 5rem;
+    margin-right: 6rem;
+    align-self: center;
+}
+
+main .sec01 .sec01cap01 .sec01cap01ov h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #bd0036;
+    line-height: 1.4;
+}
+
+main .sec01 .sec01cap01 .sec01cap01ov p {
+    background-color: #237b4c;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    letter-spacing: 40%;
+}
+
+main .sec01 .sec01cap02 {
+    display: flex;
+    margin-bottom: 13rem;
+}
+
+main .sec01 .sec01cap02 p img {
+    margin-left: 5rem;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    align-self: center;
+}
+
+main .sec01 .sec01cap02 .sec01cap02ov {
+    margin-left: 10rem;
+    margin-right: 5rem;
+    align-self: center;
+}
+
+main .sec01 .sec01cap02 .sec01cap02ov h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #bd0036;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+main .sec01 .sec01cap02 .sec01cap02ov p {
+    background-color: #237b4c;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    letter-spacing: 40%;
+}
+
+main .sec01 .sec01cap03 {
+    display: flex;
+    margin-bottom: 21rem;
+}
+
+main .sec01 .sec01cap03 p {
+    margin-right: 5rem;
+}
+
+main .sec01 .sec01cap03 p img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+main .sec01 .sec01cap03 .sec01cap03ov {
+    margin-left: 5rem;
+    align-self: center;
+}
+
+main .sec01 .sec01cap03 .sec01cap03ov h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #bd0036;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+main .sec01 .sec01cap03 .sec01cap03ov p {
+    background-color: #237b4c;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    letter-spacing: 40%;
+}
+
+main .sec02 h1 {
+    position: relative;
+    margin-bottom: 21rem;
+}
+
+main .sec02 h1 p {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 88px;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+}
+
+main .sec03 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+main .sec03 h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 6rem;
+}
+
+main .sec03 .sec03cap01 {
+    display: flex;
+    margin-bottom: 21rem;
+}
+
+main .sec03 .sec03cap01 p img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    align-self: center;
+}
+
+main .sec03 .sec03cap02 {
+    margin-right: 5rem;
+    align-self: center;
+    background-image: url(/images/logo02.png);
+    background-size: auto 45%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+main .sec03 .sec03cap01 .sec03cap02 h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #bd0036;
+    margin-bottom: 1rem;
+    border-left: 5px solid #bd0036;
+    padding-left: 1rem;
+}
+
+main .sec04 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+main .sec04 h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 6rem;
+}
+
+main .sec04 .sec04cap01 {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 12rem;
+}
+
+main .sec04 .sec04cap01 p {
+    align-self: center;
+    background-image: url(/images/block02.png);
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .sec04 .sec04cap01 p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .sec04 .sec04cap01 p img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    align-self: center;
+}
+
+main .sec04 .sec04cap02 {
+    display: flex;
+    gap: 5rem;
+}
+
+main .sec04 .sec04cap02 p {
+    align-self: center;
+    background-image: url(/images/block01.png);
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .sec04 .sec04cap02 p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .sec04 .sec04cap02 p img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    align-self: center;
+}
+
+main .sec04 button {
+    background-color: #9a9292;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-bottom: 21rem;
+}
+
+main .sec05 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+main .sec05 .money {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+main .sec05 h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 6rem;
+}
+
+main .sec05 .sec05auto {
+    position: relative;
+}
+
+main .sec05 .sec05auto h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(120, 112, 186, 0.25);
+    position: absolute;
+    left: 1rem;
+}
+
+main .sec05 .sec05auto img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+main .sec05 .sec05cap {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+main .sec05 .sec05cap .sec05gram {
+    position: relative;
+}
+
+main .sec05 .sec05cap .sec05gram img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+main .sec05 .sec05cap .sec05gram h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(120, 112, 186, 0.25);
+    position: absolute;
+    left: 1rem;
+}
+
+main .sec05 .sec05cap .sec05bung {
+    position: relative;
+}
+
+main .sec05 .sec05cap .sec05bung img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+main .sec05 .sec05cap .sec05bung h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(32, 95, 72, 0.25);
+    position: absolute;
+    left: 1rem;
+}
+
+main .sec06 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-weight: bold;
+}
+
+main .sec06 h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 6rem;
+    margin-top: 21rem;
+    font-weight: 400;
+}
+
+main .sec06 h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+main .sec06 span {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+main .sec06 .carmapOsaka {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+main .sec06 .carmapOsaka p {
+    align-self: center;
+}
+
+main .sec06 .carmapNagoya {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 12rem;
+}
+
+main .sec06 .carmapNagoya p {
+    align-self: center;
+}
+
+main .sec06 .sec06text {
+    text-align: center;
+}
+
+main .sec06 .sec06trainMap {
+    margin-top: 2rem;
+}
+
+main .sec06 .googleMap {
+    margin-top: 12rem;
+}
+
+.googleMapmap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    margin-top: 2rem;
+}
+
+.googleMapmap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ＊＊＊＊＊＊以下より液晶サイズによる微調整版メディアクエリ＊＊＊＊＊＊ */
+
+@media screen and (max-width: 1250px) {
+    main .sec01 .sec01cap01 .sec01cap01ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov p {
+        background-color: #237b4c;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 20%;
+        font-size: 14px;
+    }
+    main .sec01 .sec01cap02 .sec01cap02ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov p {
+        background-color: #237b4c;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 20%;
+        font-size: 14px;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov p {
+        background-color: #237b4c;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 20%;
+        font-size: 14px;
+    }
+
+    main .sec02 h1 {
+        position: relative;
+        margin-bottom: 10rem;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #bd0036;
+        margin-bottom: 1rem;
+        border-left: 5px solid #bd0036;
+        padding-left: 1rem;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    main .sec04 .sec04cap01 p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    main .sec04 .sec04cap02 p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    /* ＊＊＊＊＊＊以下は微調整版メディアクエリの閉じ＊＊＊＊＊＊ */
+}
+
+/* ＊＊＊＊＊＊以下よりタブレットによる調整メディアクエリ＊＊＊＊＊＊ */
+
+@media screen and (max-width: 1050px) {
+    main .sec01 {
+        margin-top: 208px;
+    }
+
+    main .sec01 .left-line {
+        border-left: 4px solid #bd0036;
+        padding-left: 0.5rem;
+    }
+
+    main .sec01 .sec01cap01 {
+        margin-bottom: 10rem;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov {
+        gap: 2rem;
+        margin-left: 3rem;
+        margin-right: 2rem;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov p {
+        border-radius: 10px;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 10%;
+    }
+
+    main .sec01 .sec01cap02 {
+        margin-bottom: 10rem;
+    }
+
+    main .sec01 .sec01cap02 p img {
+        margin-left: 3rem;
+        border-radius: 10px;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov {
+        margin-left: 5rem;
+        margin-right: 3rem;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov p {
+        border-radius: 10px;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 10%;
+    }
+
+    main .sec01 .sec01cap03 {
+        margin-bottom: 10rem;
+        margin-right: 0rem;
+    }
+
+    main .sec01 .sec01cap03 p img {
+        margin-left: 0rem;
+        border-radius: 10px;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov {
+        margin-left: 3rem;
+        margin-right: 0rem;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+    main .sec01 .sec01cap03 p {
+        margin-right: 3rem;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov p {
+        border-radius: 10px;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: 10%;
+    }
+
+    main .sec01 .sec01cap03 p img {
+        border-radius: 20px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec02 h1 p {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    main .sec03 h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    main .sec03 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    main .sec03 .sec03cap01 {
+        margin-bottom: 10rem;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 {
+        margin-right: 2rem;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #bd0036;
+        margin-bottom: 1rem;
+        border-left: 5px solid #bd0036;
+        padding-left: 0.5rem;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 p {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    main .sec04 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    main .sec04 h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    main .sec04 .sec04cap01 {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    main .sec04 .sec04cap01 p {
+        line-height: 1.2;
+    }
+
+    main .sec04 .sec04cap01 p span {
+        font-size: 1rem;
+    }
+
+    main .sec04 .sec04cap01 p img {
+        border-radius: 10px;
+    }
+
+    main .sec04 .sec04cap02 {
+        display: flex;
+        gap: 2rem;
+    }
+
+    main .sec04 .sec04cap02 p {
+        line-height: 1.2;
+    }
+
+    main .sec04 .sec04cap02 p span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    main .sec04 .sec04cap02 p img {
+        border-radius: 10px;
+    }
+
+    main .sec04 button {
+        background-color: #9a9292;
+        color: white;
+        border-radius: 10px;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        margin-bottom: 10rem;
+    }
+
+    main .sec05 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    main .sec05 h2 {
+        font-size: 48px;
+        margin-bottom: 3rem;
+    }
+
+    main .sec05 .sec05auto h3 {
+        font-size: 2rem;
+    }
+
+    main .sec05 .sec05auto img {
+        border-radius: 10px;
+    }
+
+    main .sec05 .sec05cap {
+        display: flex;
+        margin-top: 1rem;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    main .sec05 .sec05cap .sec05gram {
+        position: relative;
+    }
+
+    main .sec05 .sec05cap .sec05gram img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec05 .sec05cap .sec05gram h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(120, 112, 186, 0.25);
+        position: absolute;
+        left: 1rem;
+    }
+
+    main .sec05 .sec05cap .sec05bung {
+        position: relative;
+    }
+
+    main .sec05 .sec05cap .sec05bung img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec05 .sec05cap .sec05bung h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(32, 95, 72, 0.25);
+        position: absolute;
+        left: 1rem;
+    }
+
+    main .sec06 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-weight: bold;
+    }
+
+    main .sec06 p {
+        font-size: 14px;
+    }
+
+    main .sec06 h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        margin-top: 10rem;
+        font-weight: 400;
+    }
+
+    main .sec06 h4 {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    main .sec06 span {
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+
+    main .sec06 .carmapOsaka {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    main .sec06 .carmapNagoya {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    main .sec06 .carmapNagoya p {
+        align-self: center;
+    }
+
+    main .sec06 .sec06text {
+        text-align: center;
+    }
+
+    main .sec06 .sec06trainMap {
+        margin-top: 2rem;
+    }
+
+    main .sec06 .googleMap {
+        margin-top: 6rem;
+    }
+    /* ＊＊＊＊＊＊以下はタブレット版メディアクエリの閉じ＊＊＊＊＊＊ */
+}
+
+/* *****以下はスマホ版メディアクエリ***** */
+
+@media screen and (max-width: 750px) {
+    main {
+        margin: 0 auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    main .sec01 {
+        margin-top: 160px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    main .sec01 .left-line {
+        border-left: 3px solid #bd0036;
+        padding-left: 1rem;
+    }
+
+    main .sec01 .sec01cap01 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+
+    main .sec01 .sec01cap01 .swiper {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        align-self: center;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov h3 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+    }
+
+    main .sec01 .sec01cap01 .sec01cap01ov p {
+        background-color: #237b4c;
+        border-radius: 10px;
+        color: white;
+        padding: 1rem;
+        font-weight: 400;
+        letter-spacing: 10%;
+    }
+
+    main .sec01 .sec01cap02 {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-bottom: 6rem;
+    }
+
+    main .sec01 .sec01cap02 p img {
+        margin-left: 0rem;
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+        align-self: center;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        align-self: center;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov h3 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    main .sec01 .sec01cap02 .sec01cap02ov p {
+        background-color: #237b4c;
+        border-radius: 10px;
+        color: white;
+        padding: 1rem;
+        font-weight: 400;
+        letter-spacing: 10%;
+        margin-bottom: 2rem;
+    }
+
+    main .sec01 .sec01cap03 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 11rem;
+    }
+
+    main .sec01 .sec01cap03 p {
+        margin-right: 0rem;
+    }
+
+    main .sec01 .sec01cap03 p img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov {
+        margin-left: 0rem;
+        align-self: center;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov h3 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #bd0036;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    main .sec01 .sec01cap03 .sec01cap03ov p {
+        background-color: #237b4c;
+        border-radius: 10px;
+        color: white;
+        padding: 1rem;
+        font-weight: 400;
+        letter-spacing: 10%;
+        margin-bottom: 2rem;
+    }
+
+    main .sec02 h1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main .sec02 h1 p {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    main .sec03 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    main .sec03 h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 3rem;
+    }
+
+    main .sec03 .sec03cap01 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+
+    main .sec03 .sec03cap01 p img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+        align-self: center;
+    }
+
+    main .sec03 .sec03cap02 {
+        margin-bottom: 2rem;
+        align-self: center;
+        background-image: url(/images/logo02.png);
+        background-size: auto 45%;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    main .sec03 .sec03cap01 .sec03cap02 h3 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #bd0036;
+        margin-bottom: 1rem;
+        border-left: 3px solid #bd0036;
+        padding-left: 1rem;
+    }
+
+    main .sec04 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    main .sec04 h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    main .sec04 .sec04cap01 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    main .sec04 .sec04cap01 p {
+        align-self: center;
+        background-image: url(/images/block02.png);
+        background-size: auto 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 13px;
+    }
+
+    main .sec04 .sec04cap01 p span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    main .sec04 .sec04cap01 p img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+        align-self: center;
+    }
+
+    main .sec04 .sec04cap02 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .sec04 .sec04cap02 p {
+        align-self: center;
+        background-image: url(/images/block01.png);
+        background-size: auto 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 13px;
+    }
+
+    main .sec04 .sec04cap02 p span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    main .sec04 .sec04cap02 p img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+        align-self: center;
+    }
+
+    main .sec04 button {
+        background-color: #9a9292;
+        color: white;
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        margin-bottom: 10rem;
+    }
+
+    main .sec05 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    main .sec05 .money {
+        display: flex;
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    main .sec05 h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    main .sec05 .sec05auto {
+        position: relative;
+    }
+
+    main .sec05 .sec05auto h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(120, 112, 186, 0.25);
+        position: absolute;
+        left: 1rem;
+    }
+
+    main .sec05 .sec05auto img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec05 .sec05cap {
+        display: flex;
+        margin-top: 1rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    main .sec05 .sec05cap .sec05gram {
+        position: relative;
+    }
+
+    main .sec05 .sec05cap .sec05gram img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec05 .sec05cap .sec05gram h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(120, 112, 186, 0.25);
+        position: absolute;
+        left: 1rem;
+    }
+
+    main .sec05 .sec05cap .sec05bung {
+        position: relative;
+    }
+
+    main .sec05 .sec05cap .sec05bung img {
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    main .sec05 .sec05cap .sec05bung h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(32, 95, 72, 0.25);
+        position: absolute;
+        left: 1rem;
+    }
+
+    main .sec06 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-weight: bold;
+        margin-bottom: -20rem;
+    }
+
+    main .sec06 h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 10rem;
+        font-weight: 400;
+    }
+
+    main .sec06 h4 {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    main .sec06 span {
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    main .sec06 p {
+        font-size: 13px;
+    }
+
+    main .sec06 .carmapOsaka {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    main .sec06 .carmapOsaka p {
+        align-self: center;
+    }
+
+    main .sec06 .carmapNagoya {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    main .sec06 .carmapNagoya p {
+        align-self: center;
+    }
+
+    main .sec06 .sec06text {
+        text-align: center;
+    }
+
+    main .sec06 .sec06trainMap {
+        margin-top: 2rem;
+    }
+
+    main .sec06 .googleMap {
+        margin-top: 5rem;
+    }
+
+    .googleMapmap {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        margin-top: 2rem;
+    }
+
+    .googleMapmap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

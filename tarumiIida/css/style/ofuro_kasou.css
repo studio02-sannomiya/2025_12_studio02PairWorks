@@ -1,0 +1,235 @@
+main #ofuro-kasou {
+    background-color:#8baeaa;
+    padding-bottom: 5rem;
+    
+    }
+
+
+main #kasou-wrapper {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main #kasou-wrap {
+    max-width: 1000px;
+    height: auto;
+    padding-top: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main #ofuro-kasou .yuge {
+    display: flex;
+}
+
+main #ofuro-kasou img {
+    border-radius: 20%;
+    width: 615px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#jetbys,
+#yakuyu {
+    margin-bottom: 4rem;
+}
+
+/***************** 湯気の背景 ******************/
+
+main #ofuro-kasou #oyu-shousai1,
+#oyu-shousai2 {
+    width: 650px;
+    height: 420px;
+    background-image: url(../../images/ofuroshousai.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/*****************  湯気の中の文字  ******************/
+
+main #ofuro-kasou h4 {
+    width: 300px;
+    font-family: var(--fontfamily2);
+    color: var(--text-color5);
+    font-size: var(--text-size3);
+    margin: 0 auto;
+    background-color: rgba(139, 174, 170, 0.3);
+    text-align: center;
+}
+
+main #ofuro-kasou .komidashi {
+    width: 300px;
+    font-family: var(--fontfamily2);
+    color: var(--text-color5);
+    font-size: var(--text-size3);
+    margin: 0 auto 0.5rem;
+    text-align: center;
+}
+
+main #ofuro-kasou .yuge p {
+    font-family: var(--fontfamily4);
+    color: var(--text-color5);
+    font-size: var(--text-size1);
+    width: 400px;
+    line-height: 1.2;
+}
+
+/***************** ボタン ******************/
+
+main #ofuro-kasou #close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background-image: url(/images/close.png);
+    background-size: cover;
+    width: calc(48px + 8px + 8px);
+    height: calc(48px + 8px + 8px); 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+}
+
+main #ofuro-kasou #ahiru {
+    position: absolute;
+    bottom: -5rem;
+    right: -30rem;
+    width: 500px;
+    height: auto;
+}
+
+
+/* ポップアップの基本スタイル */
+.popup {
+    display: none; /* 初期状態は非表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.95); 背景は半透明白 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+    overflow-y: auto; /* コンテンツが多い場合はスクロール可能に */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ポップアップが表示される時のスタイル */
+.popup.show {
+    opacity: 1;
+}
+
+/* 閉じるボタンのスタイル */
+/* .close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+} */
+
+/* バツ印のスタイル */
+/* .close-popup:before, .close-popup:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+} */
+
+.close-popup:before {
+    transform: rotate(45deg);
+}
+
+.close-popup:after {
+    transform: rotate(-45deg);
+}
+
+/* ポップアップ内のコンテンツを中央に配置 */
+#kasou-wrap {
+    max-width: 900px;
+    margin: 60px auto 0;
+    padding: 20px;
+}
+
+
+/* 追加用 */
+/* ポップアップの基本スタイル */
+.popup {
+    display: none; /* 初期状態は非表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* 背景は半透明白 */
+    z-index: 9999; /* 非常に高い値にして確実に最前面に表示 */
+    overflow-y: auto; /* コンテンツが多い場合はスクロール可能に */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ポップアップが表示される時のスタイル */
+.popup.show {
+    opacity: 1;
+}
+
+/* 閉じるボタンのスタイル */
+/* .close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10000; 閉じるボタンはポップアップよりも前面に
+} */
+
+/* バツ印のスタイル */
+/* .close-popup:before, .close-popup:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+} */
+
+/* .close-popup:before {
+    transform: rotate(45deg);
+}
+
+.close-popup:after {
+    transform: rotate(-45deg);
+} */
+
+/* ポップアップ内のコンテンツを中央に配置 */
+#kasou-wrap {
+    max-width: 900px;
+    margin: 60px auto 0;
+    padding: 20px;
+}
+
+/* 明示的にポップアップを表示するスタイル (JavaScriptに問題がある場合の対策) */
+#ofuro-kasou.display-block {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* レスポンシブ対応（画面幅が1000px未満になったとき） */
+@media (max-width: 1000px) {
+    #ofuro-kasou {
+        width: 100%; /* 画面サイズに合わせる */
+    }
+}

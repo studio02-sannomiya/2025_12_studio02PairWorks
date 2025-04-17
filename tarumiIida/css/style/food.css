@@ -1,0 +1,261 @@
+/* ***********全体のはなし*********** */
+
+main .minasanHaikei {
+    background-image: url(/images/haikei.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    height: auto;
+    padding-top: 1rem;
+    /* border: 2px solid black; */
+}
+main .minasanWrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main .food h3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--text-color3);
+    font-family: var(--fontfamily2);
+}
+
+main .food p {
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 700px;
+    font-family: var(--fontfamily4);
+    color: var(--text-color1);
+}
+
+main .food h2 {
+    max-width: 500px;
+    margin: 48px auto;
+    text-align: center;
+    padding: 16px;
+    font-size: 48px;
+    color: var(--text-color2);
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-family: var(--fontfamily2);
+}
+
+/* ***********全体のはなし終わり*********** */
+/* ***********牛乳のはなし*********** */
+main .food .food01 {
+    position: relative;
+}
+
+main .food .food01 .gyu-nyuMozi {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .food .HonbunWrap {
+    display: flex;
+    /* border: 1px solid black; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main .food .gyu-nyuWrap {
+    max-width: 700px;
+    height: 500px;
+    background-image: url(/images/shokuji1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    /* margin-top: 16px; */
+    border-radius: 20px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+main .food .gyu-nyuHonbun {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    max-width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    /* margin-top: 16px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***********牛乳のはなし終わり*********** */
+
+/* ***********アイスのはなし*********** */
+main .food .aisuMozi {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .food .HonbunWrap02 {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+main .food .aisuWrap {
+    max-width: 700px;
+    height: 500px;
+    background-image: url(/images/shokuji2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+main .food .aisuHobun {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    max-width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***********アイスのはなし終わり*********** */
+
+/* ***********ビールのはなし*********** */
+main .food .HonbunWrap03 {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+main .food .bi-ruMozi {
+    position: absolute;
+    top: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main .food .bi-ruWrap {
+    max-width: 700px;
+    height: 500px;
+    background-image: url(/images/shokuji3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-top: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+main .food .bi-ruHonbun {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    max-width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***********ビールのはなし終わり*********** */
+
+/* ***********アニメーションの話*********** */
+/* 初期状態での要素のスタイル */
+.HonbunWrap,
+.HonbunWrap02,
+.HonbunWrap03 {
+    transition: transform 0.3s ease-in-out; /* アニメーションの設定 */
+}
+
+/* 要素が画面に入って大きくなるスタイル */
+.is-visible {
+    transform: scale(1.1); /* ちょっと大きくする */
+    z-index: 1; /* 要素が拡大しても重なり順を設定して他の要素の上に来る */
+}
+
+/* 文字が上に来るように、positionとz-indexを設定 */
+.gyu-nyuMozi,
+.aisuMozi,
+.bi-ruMozi {
+    position: relative; /* 文字を上に表示するための設定 */
+    z-index: 2; /* 文字を他の要素より前面に表示 */
+}
+
+/* ***********アニメーションの話おわり*********** */
+@media screen and (max-width: 1150px){
+    main .food01{
+    max-width: 90%;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 750px){
+    main .HonbunWrap{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin-top: 48px;
+        margin-bottom: 3rem;
+       justify-content: center;
+    }
+
+    main .HonbunWrap02{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin-top: 48px;
+        margin-bottom: 3rem;
+    }
+
+    main .HonbunWrap03{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin-top: 48px;
+        margin-bottom: 3rem;
+    }
+
+    main .food h2{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    main .food .gyu-nyuHonbun {
+        /* flex-basis: 50%; */
+        background-color: #ffffff;
+        max-width: 700px;
+        height: 300px;
+        border-radius: 20px;
+        /* margin-top: 16px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main .food .aisuMozi {
+        position: absolute;
+        top: 1200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main .food .bi-ruMozi {
+        position: absolute;
+        top: 2250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    }
+

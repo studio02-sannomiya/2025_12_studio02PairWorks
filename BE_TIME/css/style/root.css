@@ -1,0 +1,41 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Klee+One:wght@400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+    --textcolor: #fcfcfd;
+    --textmaincolor: #494949;
+    --accentcolor: #e5d30c;
+
+    --textsize: 1rem;
+    --textmainsize: 40px;
+
+    --kleefont: "Klee One", cursive;
+    --ebfont: "EB Garamond", serif;
+    --playfont: "Playfair Display", serif;
+}
+
+header,
+footer,
+main h1,
+main #menu h2 {
+    font-family: var(--playfont);
+}
+
+#home div,
+#concept p,
+#features h2,
+#features p,
+#staff .staffinner,
+#menu ul,
+#style .button,
+.resavetion,
+#calender p,
+#info .infobox {
+    font-family: var(--kleefont);
+}
+
+#features h2,
+#staff .staffinner dt {
+    font-weight: 600;
+}

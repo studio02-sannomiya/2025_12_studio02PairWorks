@@ -1,0 +1,119 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+footer {
+    background-image: url(../../images/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1100px;
+    color: white;
+    text-align: center;
+}
+
+.footerContainer {
+    position: relative;
+    z-index: 1000;
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.footerContainer .footerLogo {
+    cursor: pointer;
+}
+
+.footerContainer .footerNav ul li:hover,
+.footerSns li:hover {
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.footerLogo {
+    display: flex;
+    gap: 100px;
+}
+.footerLogo img {
+    width: 200px;
+    height: auto;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerNav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footerSns {
+    justify-content: center;
+}
+
+.footerSns img {
+    width: 40px;
+    height: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .footerContainer {
+        position: relative;
+        bottom: 2rem;
+
+        gap: 40px;
+        /* padding: 80px 20px; */
+    }
+
+    .footerLogo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerNav {
+        width: 100%;
+    }
+
+    .footerNav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .footerNav ul:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 12px;
+        column-gap: 24px;
+    }
+
+    .footerSns {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footerSns img {
+        width: 32px;
+    }
+}

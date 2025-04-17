@@ -1,0 +1,32 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    /* 動画サイズがPCフルスクリーンより小さいので無理やり伸ばしてます。 */
+    height: auto;
+}
+
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: all 1s linear;
+    /* ここから下はデザイン用 */
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+/* JSで付与するクラス。これによってクラスloading_bgが指定されている要素が消える */
+.active {
+    opacity: 0;
+    visibility: hidden;
+}

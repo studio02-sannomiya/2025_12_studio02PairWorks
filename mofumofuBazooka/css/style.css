@@ -1,0 +1,1511 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* bodyとhtmlに対する基本設定 */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* 横スクロールを無効化 */
+}
+
+/* 基本スタイル */
+body {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fdf8eb;
+    background-image: url("../images/back_image.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+/* 浮かぶ要素のベーススタイル */
+.floating-elements {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none; /* クリックイベントを無効化 */
+    overflow: hidden;
+}
+
+.floating-element {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+}
+
+/* 桶1のスタイル */
+.oke1 {
+    background-image: url("../images/oke-1.png");
+}
+
+/* 桶2のスタイル */
+.oke2 {
+    background-image: url("../images/oke-2.png");
+}
+
+/* 配置位置バリエーション */
+.pos1 {
+    top: 15%;
+    left: 5%;
+    animation: floating 8s ease-in-out infinite;
+}
+
+.pos2 {
+    top: 60%;
+    right: 8%;
+    animation: floating 7s ease-in-out infinite 1s; /* 1秒遅延 */
+    width: 100px;
+    height: 100px;
+}
+
+.pos3 {
+    top: 30%;
+    right: 15%;
+    animation: floating 9s ease-in-out infinite 0.5s; /* 0.5秒遅延 */
+}
+
+.pos4 {
+    bottom: 20%;
+    left: 10%;
+    animation: floating 10s ease-in-out infinite 1.5s; /* 1.5秒遅延 */
+    width: 90px;
+    height: 90px;
+}
+
+/* 上下に浮かぶアニメーション */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* 少し回転するアニメーションを追加するオプション */
+@keyframes floating-rotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* スマホサイズでは桶を小さくする */
+@media (max-width: 768px) {
+    .floating-element {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pos2,
+    .pos4 {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* コンテナ - 500pxに固定 */
+.container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fdf8eb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* ヘッダー */
+header {
+    background-color: #ffa500; /* オレンジ色の背景 */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* width: 501px; */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 画像間の間隔 */
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-text img {
+    width: 178px;
+    height: 100px;
+    object-fit: contain; /* 画像の比率を維持 */
+}
+
+.menu-button {
+    background-color: #3aa3db;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    z-index: 101;
+    padding: 10px;
+}
+
+.kodawari-text h3 {
+    /* border: 1px solid red; */
+    font-size: 25px;
+    font-family: "Yuji Syuku", serif;
+    margin-bottom: 12px;
+    color: #000;
+    text-align: center;
+}
+
+main .kodawari-item .kodawari-text .sauna h3 {
+    font-size: 14px;
+}
+
+.kodawari-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    /* border: 1px solid red; */
+}
+
+/* メインの説明文 */
+.kodawari-text p:first-of-type {
+    font-size: 14px;
+    font-family: "Shippori Mincho", serif;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 詳細情報（温度・場所など） */
+.kodawari-text p:last-of-type {
+    font-size: 12px;
+    font-family: "Shippori Mincho", serif;
+    line-height: 1.5;
+}
+
+/* ヒーローセクション */
+.hero {
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hero-item {
+    flex: 1;
+    overflow: hidden;
+}
+
+.hero-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* スライドショー */
+.hero-slideshow {
+    position: relative;
+    width: 100%;
+    height: auto; /* 100vhから自動高さに変更 */
+    overflow: hidden;
+    max-width: 500px; /* コンテナの幅に合わせる */
+    margin: 0 auto;
+    padding: 0; /* 余白なし */
+}
+
+.slide-container {
+    width: 100%;
+    height: auto; /* 高さも自動に */
+    position: relative;
+    padding: 0; /* 余白なし */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto; /* 高さも自動に */
+    padding: 0; /* 余白なし */
+}
+
+.slide img {
+    width: 100%;
+    height: auto; /* アスペクト比を維持 */
+    object-fit: contain; /* または cover、用途に応じて */
+    display: block; /* インライン要素のデフォルト下部の余白を削除 */
+    margin: 0; /* 余白なし */
+    padding: 0; /* 余白なし */
+}
+
+/* フェード効果 */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 500px) {
+    .hero-slideshow {
+        max-width: 100%; /* 小さい画面では幅いっぱいに */
+    }
+}
+
+/* セクション共通スタイル */
+section {
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.menu-section,
+.recommend-section,
+.swipe-section,
+.guide-section,
+.calendar-section,
+.sns-section,
+.contact-section {
+    background-color: #fff8dc;
+}
+
+.section-title {
+    font-size: 18px;
+    background-color: #ff8c00;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+/* メニューリスト */
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    background-color: #fdf8eb;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #4169e1;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+}
+
+.icon-pin {
+    display: inline-block;
+    margin-right: 10px;
+    color: #4169e1;
+    font-size: 16px;
+}
+
+.icon-pin:before {
+    content: "📌";
+}
+
+/* おすすめカード */
+.recommend-card {
+    background-color: #ffd700;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.recommend-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.recommend-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.recommend-text {
+    font-size: 14px;
+}
+
+/* スワイプギャラリー */
+.swipe-container {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+.swipe-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.swipe-item {
+    flex: 0 0 auto;
+    width: 150px;
+}
+
+.swipe-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swipe-text {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* 利用ガイド */
+.guide-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.guide-icon {
+    text-align: center;
+}
+
+.guide-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    border: 2px solid #ffd700;
+}
+
+/* カレンダー */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #4169e1;
+    color: white;
+}
+
+.calendar .holiday {
+    background-color: #ffcccb;
+}
+
+.calendar .available {
+    background-color: #90ee90;
+}
+
+.calendar .full {
+    background-color: #ffd700;
+}
+
+.calendar-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.available-dot,
+.full-dot,
+.holiday-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.available-dot {
+    background-color: #90ee90;
+}
+
+.full-dot {
+    background-color: #ffd700;
+}
+
+.holiday-dot {
+    background-color: #ffcccb;
+}
+
+/* SNS */
+.instagram-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.see-more {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.see-more a {
+    color: #e1306c;
+    font-weight: bold;
+}
+
+/* お問い合わせ */
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.icon-phone:before {
+    content: "☎️";
+}
+
+.icon-mail:before {
+    content: "📧";
+}
+
+.icon-clock:before {
+    content: "🕒";
+}
+
+.contact-button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contact-button button {
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-button button:hover {
+    background-color: #3254b1;
+}
+
+/* デザートメニューセクション */
+.dessert-section {
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dessert-header {
+    text-align: center;
+    margin-bottom: 48px; /* ヘッダー画像とスライダーの間隔 */
+}
+
+.dessert-header img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain; /* 画像の比率を維持 */
+}
+
+/* 修正 */
+.hero-slide {
+    display: none;
+}
+
+.dessert-slide img {
+    width: 100%;
+    max-height: 400px; /* より適切な高さに調整 */
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* スライダーのスタイル */
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ナビゲーションボタン */
+.slider-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 追加する CSS */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #3f9acd;
+    margin-top: 50px;
+}
+
+.swiper-slide img {
+    padding: 0 48px 0 48px;
+    padding-bottom: 30px;
+}
+
+.sweets {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 404px;
+    position: relative;
+}
+
+.dot.active {
+    background-color: #3aa3db;
+}
+
+/* 以下は新しいコードに合わせたスタイル */
+
+.child-debut-image img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain; /* 画像の比率を維持 */
+}
+
+/* 子供銭湯デビューセクション（sec04） */
+.sec04 .sec04title p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec04 .sec04top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 32px;
+    margin-bottom: 32px;
+    gap: 32px;
+}
+
+.sec04 .sec04bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 32px;
+    margin-bottom: 80px;
+    gap: 32px;
+}
+
+.sec04 .sec04box p {
+    text-align: center;
+}
+
+/* 共通のh2スタイル */
+main h2 {
+    text-align: center;
+}
+
+/* イベントカレンダー（sec05） */
+main .sec05 p {
+    margin: 0 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* SNSキャンペーン（sec06） *****************************************************************/
+.sec06 .cam01 {
+    /* border: 1px solid gold; */
+    margin-top: 48px;
+    display: flex;
+}
+
+.sec06 .cam01left {
+    /* border: 3px solid red; */
+    background-color: #ffd1dc;
+    width: 249px;
+    height: 200px;
+}
+
+.sec06 .cam01right img {
+    width: 100px;
+}
+
+.sec06 .cam01flex {
+    /* border: 1px solid chartreuse; */
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.sec06 .cam01flex .usagi {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.sec06 .cam01right .acount {
+    /* border: 1px solid red; */
+    font-size: 24px;
+    width: 159px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam01 .cam01left .main01 {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 32px;
+    font-size: 36px;
+    color: #3aa3db;
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam01 .cam01left .setumei {
+    /* border: 1px solid red; */
+    font-size: 24px;
+    margin: 0 10px;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥ */
+
+.sec06 .cam02 {
+    display: flex;
+    /* border: 1px solid gold; */
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.sec06 .cam02 .inst02 {
+    width: 164px;
+    height: 161px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.sec06 .cam02right {
+    background-color: #ffd1dc;
+    width: 249px;
+    height: 200px;
+}
+
+.sec06 .cam02right .main02 {
+    text-align: center;
+    font-size: 36px;
+    margin: 32px;
+    color: #3aa3db;
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam02right .setumei {
+    font-size: 24px;
+    /* border: 1px solid blue; */
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥ */
+.sec06 .cam03 {
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+.sec06 .cam03left {
+    background-color: #ffd1dc;
+    width: 249px;
+    height: 211px;
+}
+
+.sec06 .cam03left .main03 {
+    text-align: center;
+    font-size: 36px;
+    color: #3aa3db;
+    margin: 32px;
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam03left .setumei {
+    font-size: 24px;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam03left .tyuui {
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sec06 .cam03right .bag img {
+    width: 257px;
+    height: 210px;
+}
+
+/* 料金案内（sec07） *************************************************************************/
+.sec07 .sec071 {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.sec07 h2 {
+    margin-bottom: 48px;
+}
+
+.sec07 .money {
+    color: #3aa3db;
+}
+
+/* アクセス情報（sec08） */
+.sec08 h2 {
+    margin-top: 80px;
+}
+
+.sec08box {
+    background-color: #ffd1dc;
+    width: 436px;
+    height: 377px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 160px;
+}
+
+.sec08 .map {
+    width: 85%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sec08 .map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.sec08 .sec08box .sec08text {
+    text-align: center;
+}
+
+.sec08 .sec08box .sec08text p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* 新しいフッタースタイル */
+footer {
+    background-color: #f6b112;
+    width: 500px;
+    height: 73px;
+    margin: 0 auto;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .footertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer .footerflex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer small {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* うさぎジャンプアニメーション用スタイル */
+
+@keyframes jumpFromRight {
+    0% {
+        right: -100%;
+        opacity: 0;
+    }
+    100% {
+        right: -20px;
+        opacity: 1;
+    }
+}
+
+.usagijump1.visible {
+    animation: jumpFromRight 1.2s ease-out forwards;
+}
+
+.usagijump1.visible img {
+    opacity: 1;
+    animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.title-with-rabbit {
+    position: relative; /* 絶対位置指定の基準 */
+    display: flex;
+    align-items: center;
+    overflow: visible; /* はみ出し部分を表示するように変更 */
+    height: 175px; /* 高さを指定 */
+    margin-bottom: 20px; /* 下部の余白 */
+}
+
+.usagijump1 {
+    position: absolute;
+    right: -100%;
+    width: 183px; /* うさぎ画像と同じ幅に合わせる */
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.usagijump1 img {
+    opacity: 0;
+    transition: all 1s ease-out;
+    width: 183px;
+    height: 154px;
+    max-width: none; /* 既存のmax-width制限を解除 */
+}
+
+.usagijump1.visible {
+    right: -20px; /* 少し右側に表示位置を調整 */
+    opacity: 1;
+}
+
+.usagijump1.visible img {
+    opacity: 1;
+}
+
+.usagijump2 img {
+    position: relative;
+    left: -100%;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.usagijump2.visible img {
+    left: 0;
+    opacity: 1;
+}
+
+/* レスポンシブ対応 */
+
+@media (max-width: 500px) {
+    .container,
+    footer,
+    .sec07 .sec071,
+    .sec08box {
+        width: 100%;
+    }
+}
+
+.sec07 .sec071 {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-button span {
+    position: absolute;
+    left: 7px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #3254b1;
+}
+
+/* 3本線の位置設定 */
+.menu-button span:nth-child(1) {
+    top: 10px;
+}
+
+.menu-button span:nth-child(2) {
+    top: 18px;
+}
+
+.menu-button span:nth-child(3) {
+    top: 26px;
+}
+
+/* ×マークのスタイル */
+.menu-button.active span:nth-child(1) {
+    top: 18px; /* 中央に移動 */
+    transform: rotate(45deg);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0; /* 中央の線を非表示 */
+}
+
+.menu-button.active span:nth-child(3) {
+    top: 18px; /* 中央に移動 */
+    transform: rotate(-45deg);
+}
+
+/* モバイルメニューのスタイル - 画像に合わせて */
+.mobile-menu {
+    position: fixed;
+    top: 80px; /* ヘッダーの高さに合わせて調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    max-width: 100%;
+    background-color: #fff8dc;
+    z-index: 99;
+    display: none;
+    padding: 10px;
+}
+
+/* ニュースセクション */
+.news-section {
+    margin-top: 80px; /* ヒーローセクションとの間隔 */
+    padding: 0 16px; /* 左右に48ピクセルのスペース */
+    width: 100%;
+    background-color: #fdf8eb;
+}
+
+.news-header {
+    text-align: center;
+    margin-bottom: 48px; /* 画像とニュースリストの間隔 */
+}
+
+.news-header img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain; /* 画像の縦横比を維持 */
+}
+
+.news-list {
+    width: 100%;
+}
+
+.news-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+
+    display: flex;
+    align-items: center;
+}
+
+.news-date {
+    width: 26px;
+    height: 24px;
+    background-color: #3aa3db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.news-date span {
+    color: white;
+    font-size: 14px;
+}
+
+.news-title {
+    font-size: 14px;
+    font-family: "Shippori Mincho", serif;
+    font-weight: normal; /* 太字から通常の太さに変更 */
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.menu-button.active span:nth-child(1) {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active span:nth-child(3) {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffd1dc; /* ピンク色の背景 */
+    border-radius: 15px;
+    font-weight: normal;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ffa500; /* オレンジ色の円 */
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+}
+
+/* こだわりセクション */
+.kodawari-section {
+    margin-top: 80px;
+    padding: 0; /* 左右のパディングを削除 */
+    width: 100%;
+    background-color: #fdf8eb;
+}
+
+.kodawari-header {
+    text-align: center;
+    margin-bottom: 32px; /* ヘッダー画像と内容の間隔 */
+}
+
+.kodawari-header img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain; /* 画像の比率を維持 */
+}
+
+.kodawari-list {
+    width: 100%;
+}
+
+.kodawari-item {
+    display: flex;
+
+    align-items: center;
+    width: 500px; /* コンテナの幅に合わせる */
+}
+/* 画像とテキストを入れ替えるためのスタイル */
+.kodawari-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.kodawari-image {
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.kodawari-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kodawari-text {
+    padding: 6px;
+    width: 250px;
+    height: 200px;
+    background-color: rgba(246, 177, 18, 0.6); /* #F6B112の60%透明度 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. こだわりセクションの改行調整 */
+.kodawari-text p br {
+    display: none;
+}
+
+.kodawari-text {
+    padding: 15px;
+    min-height: 200px;
+    text-align: left;
+}
+
+.kodawari-text h3 {
+    text-align: center;
+}
+
+.sec04 h2,
+.sec05 h2,
+.sec06 h2,
+.sec07 h2,
+.sec08 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sec04 h2 img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+
+.sec05 h2 img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.sec06 h2 img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.sec07 h2 img,
+.sec08 h2 img {
+    width: 100px;
+    height: 175px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ******************************************************************************* */
+@media (max-width: 500px) {
+    /* ヘッダー */
+    header {
+        background-color: #ffa500; /* オレンジ色の背景 */
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box; /* パディングとボーダーを幅に含める */
+    }
+
+    /* SNSキャンペーンセクションなど横にはみ出しやすい要素を調整 */
+    .sec06 .cam01,
+    .sec06 .cam02,
+    .sec06 .cam03 {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* こだわりセクションの調整 */
+    .kodawari-item {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* イメージ要素が親要素からはみ出ないようにする */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* iframeなどの埋め込み要素も幅を制限 */
+    iframe {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* こだわりセクション */
+    .kodawari-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kodawari-item.reverse {
+        flex-direction: column;
+    }
+
+    .kodawari-image,
+    .kodawari-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .kodawari-text {
+        padding: 15px;
+        min-height: 200px;
+    }
+
+    /* スマホ表示時の子供銭湯デビューセクションの間隔を均等にする */
+    /* より具体的なセレクタを使う */
+    #child-debut.sec04 .sec04top,
+    #child-debut.sec04 .sec04bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 16px;
+        margin-bottom: 32px !important; /* !importantを使用して確実に適用 */
+    }
+
+    /* 各ボックスの間隔を均等にする */
+    #child-debut.sec04 .sec04box {
+        margin-bottom: 32px !important; /* 各ボックスの下に32pxの余白 */
+    }
+
+    /* 最後のボックスの下のマージンを削除 */
+    #child-debut.sec04 .sec04bottom .sec04box:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* 最初のセクションの最後のボックスも同様 */
+    #child-debut.sec04 .sec04top .sec04box:last-child {
+        margin-bottom: 32px !important; /* topとbottomセクション間のマージン */
+    }
+
+    /* SNSキャンペーンセクション */
+    .cam01,
+    .cam02,
+    .cam03 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cam01left,
+    .cam01right,
+    .cam02right,
+    .cam03left,
+    .cam03right,
+    .inst02 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cam03right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cam03right .bag {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cam03right .bag img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .cam02 {
+        display: flex !important;
+        flex-direction: column-reverse !important; /* columnからcolumn-reverseに変更 */
+    }
+
+    .cam02right {
+        margin-bottom: 20px; /* 下部の余白を増やす */
+    }
+
+    .cam02 .inst02 {
+        margin-top: 0; /* 上部の余白を削除 */
+    }
+
+    .cam01flex {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .cam02 .inst02 {
+        margin-top: 0;
+    }
+
+    .cam03right .bag img {
+        width: 100%;
+        height: auto;
+        max-width: 257px;
+    }
+
+    .sec06 .cam01left,
+    .sec06 .cam02right,
+    .sec06 .cam03left {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+
+    .sec06 .setumei {
+        /* border: 2px solid black; */
+        text-align: center;
+    }
+
+    .sec07 {
+        padding: 16px;
+    }
+
+    .kodawari-text h3 {
+        /* border: 1px solid red; */
+        font-size: 25px;
+        font-family: "Yuji Syuku", serif;
+        margin-bottom: 12px;
+        color: #000;
+        text-align: center;
+        /* border: 2px solid red; */
+        margin-top: 1rem;
+    }
+}

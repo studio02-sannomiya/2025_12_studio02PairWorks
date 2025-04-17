@@ -1,0 +1,69 @@
+:root {
+    --background-color: #257180;
+    --maincolor: #f2e5bf;
+    --accentcolor: #fd8b51;
+    --textcolor: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    filter: sepia(0.4);
+}
+
+
+
+/*  **************** font  ***************** */
+
+body h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+body h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+body h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+body h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+body p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+/*    *******************  360px 設定　　********** */
+
+@media screen and (max-width: 360px) {
+    body h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    body h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    body h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    body h4 {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    body p {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}

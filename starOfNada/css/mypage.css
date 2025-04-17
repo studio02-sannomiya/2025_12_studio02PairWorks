@@ -1,0 +1,202 @@
+/* 全ページ共通パーツ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* 全ページ共通パーツ（レトロフォント）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../851letrogo_007.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    font-family: "Shippori Mincho", serif;
+}
+
+.fontF {
+    font-family: 'CustomFont';
+}
+
+span {
+    font-family: 'CustomFont';
+}
+/* 全ページ共通パーツ（ヘッダー）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* 以下で「左のロゴの塊」と「右のリンク文字の塊」の位置を「横並び」「左始まり」「上下の真ん中」にしている */
+header nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #57bebc;
+}
+/* 以下で「左のロゴの塊の中身」の位置を「横並び」「上下の真ん中」にしている */
+/* 「左のロゴの塊」 */
+header nav .logoWrapper {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+header nav h1 img{
+    width: 70px;
+    height: 70px;
+}
+header nav h2{
+    color: #08102c;
+}
+/* 以下で「右のリンク文字の塊の中身」の位置を「横並び」「上下の真ん中」にしている */
+/* 「右のリンク文字の塊」 */
+nav ul{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ad1e2f;
+    flex-wrap: nowrap;
+}
+header ul div {
+    display: none;
+}
+/* 全ページ共通パーツ（フッター）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #57bebc;
+    color: #ad1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+/* 全ページ共通パーツ（TOPに戻るボタン）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main #scrollToTop {
+    position: fixed;
+    bottom: 20px;  /* 画面下から20pxの位置 */
+    right: 20px;   /* 画面右から20pxの位置 */
+    cursor: pointer;
+    display: none; /* 最初は表示しない */
+    z-index: 1000;  /* 他のコンテンツより前に表示 */
+}
+main #scrollToTop .returnTopButton {
+    width: 140px;
+    height: 94.11px;
+}
+/* html, bodyなどの共通の記述 ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+html, body{
+    background-color: #f4ede6;
+    color: #9c6553;
+}
+/* 始まり　画像を伸縮させるために必須の記述 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* 終わり　画像を伸縮させるために必須の記述 */
+
+
+body {
+    background-color: #57bebc;
+}
+
+
+main .membership {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+main .membership img {
+    max-width: 100%;
+}
+
+
+
+/* ハンバーガーメニューのメディアクエリ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* ここから下ハンバーガーメニュー亀井追記 */
+@media screen and (max-width:600px) {
+    #usaginoyunituite .H2Wrapper h2 {
+        font-size: 24px;
+    }
+
+
+    #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #f4ede6;
+        transition: 0.3s;
+        margin-bottom: 8px;
+    }
+
+    .menu-toggle.reDesing span:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .menu-toggle.reDesing span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.reDesing span:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    header ul {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background-color: #57bebc;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        z-index: 1000;
+        transition: all 0.3s linear;
+    }
+
+    /* 亀井追加 */
+    header ul div {
+        display: block;
+    }
+
+    header ul div p img:nth-of-type(1) {
+        width: 120px;
+        height: auto;
+        margin: 0 0 1rem 1rem;
+    }
+
+    header ul div p img:nth-of-type(2) {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+        background-color: rgba(244, 237, 230, 0.6);
+    }
+
+    /* 亀井追記ここまで */
+    header ul.open {
+        top: 0;
+    }
+}

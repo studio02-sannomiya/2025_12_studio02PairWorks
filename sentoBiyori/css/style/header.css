@@ -1,0 +1,247 @@
+header{
+    background-color: var(--mainColor);
+    height: 100px;
+}
+
+header #headerAll{
+    max-width: 1024px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #headerAll .usaginoyuMainlogo{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #headerAll h1:nth-child(1){
+    width: 50px;
+}
+
+header #headerAll h1:nth-child(2){
+    width: 234px;
+}
+
+header #headerAll .usaginoyuMainnav{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #headerAll .usaginoyuMainnav nav{
+    gap: 1rem;
+}
+
+header #headerAll .usaginoyuMainnav nav ul{
+    color: var(--backGroundColor);
+    display: flex;
+    gap: 0.5rem;
+}
+header #headerAll .usaginoyuMainnav nav ul li{
+    align-self: center;
+}
+
+/* この下ヘッダーの予約ボタン */
+header #headerAll .usaginoyuMainnav nav ul #sauna-reserve-button {
+    color: var(--mainColor);
+    background-color: var(--backGroundColor);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+header #headerAll .usaginoyuMainnav nav ul #sauna-reserve-button:hover {
+    opacity: 0.8;
+}
+
+/* モーダルのスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* スクロール対応 */
+}
+
+.modal-content {
+    background-color: #fff8f1; /* モーダルの背景色 */
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%; /* 幅を自動調整（最大でも90%） */
+    max-width: 900px; /* 最大幅を900pxに設定 */
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow-y: auto; /* 内容が多い場合にスクロール対応 */
+    max-height: 80vh; /* モーダルの最大高さを画面の80%に設定 */
+    color: #172e53; /* 文字色 */
+}
+
+/* ヘッダー、タイトル */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* カレンダーの画像 */
+.calendar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* フォームのスタイル */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: var(--mainColor); /* 送信ボタンの背景色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* ボタンをセンターに配置 */
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* センター配置 */
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accentColor); /* 送信ボタンのホバー時の色 */
+    color: var(--mainColor);
+}
+
+#close-modal {
+    background-color: transparent; /* 背景色なし */
+    color: var(--mainColor); /* 文字色 */
+    border: 2px solid var(--mainColor); /* ボーダーライン */
+    padding: 10px 20px;
+    width: 100%; /* ボタンをセンターに配置 */
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto; /* センター配置 */
+}
+
+#close-modal:hover {
+    background-color: #fff8f1; /* ホバー時に背景色を少し変更 */
+    border-color: #6a3a2d; /* ボーダー色を変える */
+}
+
+/* モバイルデバイス向けのスタイル調整 */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* モバイル画面では95%幅に設定 */
+        max-height: 90vh; /* 高さをさらに調整 */
+    }
+
+    button[type="submit"],
+    #close-modal {
+        font-size: 14px; /* ボタンの文字を少し小さく */
+    }
+}
+/* ここまでヘッダーの予約ボタン */
+
+/* ハンバーガーメニューはこの下にメディアクエリつけて実装する */
+
+@media screen and (max-width: 768px) {
+
+    header #headerAll .usaginoyuMainlogo{
+    width: 600px;
+    }
+
+
+
+    header #headerAll .usaginoyuMainnav #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+    }
+
+    /* メニュートグルの基本スタイル */
+    header #headerAll .usaginoyuMainnav .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        gap: 24px;
+    }
+
+    header #headerAll .usaginoyuMainnav #drawerButton .bar {
+        height: 4px;
+        width: 100%;
+        background-color: var(--accentColor);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+    header #headerAll .usaginoyuMainnav #drawerButton.reDesign .bar1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    header #headerAll .usaginoyuMainnav #drawerButton.reDesign .bar2 {
+        opacity: 0;
+    }
+
+    header #headerAll .usaginoyuMainnav #drawerButton.reDesign .bar3 {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 9px;
+    }
+
+    header #headerAll .usaginoyuMainnav nav ul {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background-color: var(--mainColor);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        z-index: 1000;
+    }
+
+    header #headerAll .usaginoyuMainnav nav ul.open {
+        top: 0;
+    }
+}
+/* ハンバーガーメニューはここまで */

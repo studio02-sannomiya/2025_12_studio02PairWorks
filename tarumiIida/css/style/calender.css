@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+main .calender {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+/***************** メディアクエリ 1000px ******************/
+@media screen and (max-width: 1000px) {
+    main .calender {
+        max-width: 90%;
+    }
+}

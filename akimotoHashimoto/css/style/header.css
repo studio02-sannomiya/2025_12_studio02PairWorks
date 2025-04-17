@@ -1,0 +1,236 @@
+/* ****************  ナビゲーション動き開始******* */
+
+#drawerButton {
+    display: none;
+}
+
+h2 {
+    transition: all 0.5s linear;
+}
+
+.active {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: bisque;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.noren-container {
+    display: none;
+}
+
+
+/*   **************  header  ********* */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    margin-inline: auto;
+}
+
+header .header .headerbox {
+    max-width: 1200px;
+    /* border: 3px solid #333333; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-inline: auto;
+
+}
+
+header .header p {
+    max-width: 50px;
+    aspect-ratio: 1/1;
+}
+
+header .header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+header .header nav ul li {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.container header .header nav ul li:hover {
+    background-color: #ffd6a5;
+}
+
+
+
+/*   *********************   750 px  ************** */
+
+@media screen and (max-width: 750px) {
+    header .header .headerbox {
+        padding-inline: 1rem;
+        justify-content: space-between;
+    }
+
+    #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 800;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        border: none;
+    }
+
+    /* 各線のスタイル */
+    .line {
+        background-color: #333;
+        height: 4px;
+        width: 100%;
+        transition: all 0.3s ease;
+        margin-bottom: 4px;
+        border-radius: 5px;
+    }
+
+    /* メニューが開いたときのアニメーション */
+    #drawerButton.redesign .line1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 10px;
+    }
+
+    #drawerButton.redesign .line2 {
+        opacity: 0;
+    }
+
+    #drawerButton.redesign .line3 {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 10px;
+    }
+
+    /* メニュー全体 */
+    header nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        display: block;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 500;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        background: transparent;
+        right: -100%;
+        text-align: right; /* ul全体を右寄せ */
+        padding-top: 100px;
+        padding-right: 2rem;
+    }
+
+    /* のれん */
+    .noren-container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: -1;
+    }
+
+    .noren {
+        width: 50%;
+        height: 100%;
+        background-color: #257180; /* Bの青緑色の背景 */
+        position: absolute;
+        top: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .noren-left {
+        left: -5px;
+        transform: translateX(-100%);
+        border-bottom-right-radius: 20px;
+        position: relative;
+    }
+
+    .noren-right {
+        right: -5px;
+        transform: translateX(100%);
+        border-bottom-left-radius: 20px;
+    }
+
+    .left-image {
+        width: 80%;
+        align-items: center;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 30px; 
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out 0.3s; 
+        transform: translateY(20px);
+    }
+    .left-image img {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    /* メニューリスト */
+    header nav ul li {
+        margin: 20px 0;
+        list-style: none;
+        /* width: auto */
+        display: block;
+        width: 100%;
+        text-align: right;
+        /* border: 3px solid #ffffff; */
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        /* border: 3px solid #ffffff; */
+        padding: 5px 15px;
+        display: inline-block; /* インライン要素をブロック化 */
+    }
+
+    /* 開いた時のスタイル */
+    header nav ul.open {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s linear;
+    }
+
+    header nav ul.open .noren-left {
+        transform: translateX(0);
+    }
+
+    header nav ul.open .noren-right {
+        transform: translateX(0);
+    }
+    header nav ul.open .left-image {
+        opacity: 1;
+    }
+}

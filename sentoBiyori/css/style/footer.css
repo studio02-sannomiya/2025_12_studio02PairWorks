@@ -1,0 +1,47 @@
+footer{
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer img:nth-child(1){
+    width: 150px;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+footer img:nth-child(2){
+    width: 234px;
+    align-self: center;
+}
+
+footer nav{
+    align-self: center;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+footer nav ul li{
+    color: var(--backGroundColor);
+}
+
+footer small{
+    color: var(--backGroundColor);
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px){
+
+    footer nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+}

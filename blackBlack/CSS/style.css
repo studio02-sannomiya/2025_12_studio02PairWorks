@@ -1,0 +1,767 @@
+:root {
+    --textcolor: #281914;
+    --textcolor02: #f5f5f5;
+    --textcolor03: rgba(255, 255, 255, 0.5);
+    --textcolor04: #d76735;
+    --footercolor: #08307a;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    max-width: 100%;
+    height: 100%;
+}
+section {
+    margin: 0 auto;
+    opacity: 1;
+}
+span {
+    line-height: 1.6;
+}
+body {
+    background: url(../images/gradation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    font-family: "Zen Kaku Gothic New", "Open Sans", sans-serif;
+}
+header {
+    background-color: var(--footercolor);
+    height: 106px;
+    display: flex;
+    color: var(--textcolor02);
+    justify-content: space-around;
+}
+header .header01 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+header h1 {
+    color: var(--textcolor02);
+    font-size: 56px;
+    font-weight: 500;
+}
+
+header p {
+    font-size: 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    font-size: 24px;
+    display: flex;
+    gap: 12px;
+    transition: all 0.3s linear;
+}
+header nav ul .logolist,
+header nav ul .li01,
+header nav ul .li02 {
+    display: none;
+}
+
+#drawerButton {
+    display: none;
+}
+.active {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    /* transition: all 0.5s linear; */
+}
+
+main {
+    margin: 0 auto;
+}
+
+main .mainvisual {
+    position: relative;
+    background-image: url(../images/YAMA_DSC1633_r.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 964px;
+}
+
+main .mainvisual h2 {
+    position: absolute;
+    left: 72%;
+    top: 21%;
+    font-size: 72px;
+    color: var(--textcolor02);
+    writing-mode: vertical-rl;
+    text-indent: -0.5em;
+    font-weight: bold;
+}
+
+main .usagichan {
+    position: absolute;
+    top: 23%;
+    left: 43%;
+}
+main .usagichan img {
+    width: 330px;
+    height: 330px;
+}
+
+main .usagichan .usayu {
+    margin: 8px;
+    color: var(--textcolor02);
+}
+
+main .usagichan .usayu .p01 {
+    margin-top: 1rem;
+    font-size: 56px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+main .usagichan .usayu .p02 {
+    margin-top: 1rem;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#secabout {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+#secabout h2 {
+    font-size: 44px;
+    font-weight: 500;
+    margin-top: 6rem;
+}
+
+#secabout h1 {
+    font-size: 56px;
+    font-weight: bold;
+    background-color: #fbd266;
+    max-width: 725px;
+    margin: 98px auto 0;
+}
+
+#secabout .p03 {
+    margin-top: 40px;
+    margin-bottom: 144px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#secabout .div01 {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#secabout .div01 img {
+    flex-basis: 500px;
+}
+
+#secabout .div02 {
+    flex-basis: 530px;
+}
+
+#secabout .div02 h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.div01 .div02 p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+
+#secabout .div03 {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+#secabout .div03 img {
+    flex-basis: 500px;
+}
+
+.div03 .div04 {
+    margin-top: 18px;
+    flex-basis: 530px;
+}
+
+.div03 .div04 h3 {
+    font-size: 40px;
+    margin-bottom: 36px;
+}
+
+.div03 .div04 p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+
+#secabout .div05 {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#secabout .div05 img {
+    flex-basis: 500px;
+}
+
+.div05 .div06 {
+    margin-top: 72px;
+    flex-basis: 530px;
+}
+
+.div05 .div06 h3 {
+    font-size: 40px;
+    margin-bottom: 72px;
+}
+
+.div05 .div06 p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+
+#secabout .div07 {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+#secabout .div07 img {
+    flex-basis: 500px;
+}
+
+.div07 .div08 {
+    margin-top: 36px;
+    flex-basis: 530px;
+}
+
+.div07 .div08 h3 {
+    font-size: 40px;
+    margin-bottom: 36px;
+}
+
+.div07 .div08 p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+h3 {
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 1rem;
+}
+main #secmenu,
+main #secfood {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
+}
+main #secmenu,
+main #secfood {
+    background-color: var(--textcolor03);
+    gap: 1rem;
+    padding: 1rem;
+}
+main #secmenu p,
+main #secfood p {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 1rem;
+}
+main #secmenu img,
+main #secfood img {
+    max-width: 230px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+main #secmenu span,
+main #secfood span {
+    font-size: 16px;
+}
+main #secfood .foodswiper p {
+    color: var(--textcolor04);
+}
+main .swiper {
+    width: 100%;
+    /* height: 300px; */
+}
+main .swiper .swiper-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+main .swiper .swiper-wrapper .swiper-slide {
+    max-width: 33%;
+    text-align: center;
+    font-size: 18px;
+    padding: 2rem;
+    /* スライドの中央揃え */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+main .swiper .swiper-button-prev,
+main .swiper .swiper-button-next {
+    color: var(--textcolor);
+}
+main #secevent {
+    max-width: 1080px;
+    text-align: center;
+    margin: 0 auto;
+    gap: 60px;
+}
+main #secevent .eventiframe iframe {
+    max-width: 1080px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    gap: 60px;
+}
+main #secevent p {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main #secsns {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+main #secsns .snstwitter,
+main #secsns .snsinsta {
+    flex-basis: 500px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main #secmap {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+main #secmap .mapiframe {
+    max-width: 500px;
+    height: 434px;
+    width: 100%;
+}
+main #secmap .mapiframe iframe {
+    width: 100%;
+}
+main #secmap .secmaptext {
+    max-width: 500px;
+    height: auto;
+}
+main #secmap .secmaptext span {
+    font-size: 18px;
+    display: block;
+    line-height: 1.6;
+}
+
+main #secmap .secmaptext span:nth-child(6) {
+    margin-bottom: 2rem;
+}
+
+main #secmap .secmaptext span:first-child,
+main #secmap .secmaptext span:nth-child(4) {
+    font-weight: 700;
+}
+main #secfootervisual {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #secfootervisual h2 {
+    color: var(--textcolor02);
+    height: 300px;
+    font-size: 56px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-indent: -0.5em;
+    line-height: 1.7;
+}
+footer {
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: var(--footercolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+footer img {
+    width: 208px;
+    height: 208px;
+}
+footer h4 {
+    color: var(--textcolor02);
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+footer .footerspan span {
+    color: var(--textcolor02);
+    display: block;
+    text-align: center;
+}
+footer .footerspan span:last-child {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        display: block;
+    }
+    header .header01 {
+        display: block;
+        text-align: center;
+    }
+
+    header .header01 h1 {
+        font-size: 48px;
+    }
+
+    header .header01 p {
+        font-size: 26px;
+    }
+    header nav ul li {
+        color: var(--footercolor);
+        font-weight: 500;
+        margin: 0.5rem;
+    }
+    header nav ul .logolist img {
+        margin-top: 3rem;
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+    header nav ul .li01 {
+        margin-top: 1rem;
+        font-size: 42px;
+        font-weight: 700;
+        display: block;
+        align-items: center;
+    }
+    header nav ul .li02 {
+        display: block;
+        margin-top: 16px;
+    }
+
+    header nav ul .logolist {
+        display: block;
+        text-align: center;
+    }
+    #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+        /* background-image: url(../images/drawermenu.png);
+        background-size: cover;
+        padding: 0;
+        width: calc(72px + 8px + 8px);
+        height: calc(72px + 8px + 8px);
+        background-color: white; */
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        gap: 24px;
+    }
+
+    .bar {
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+    #drawerButton.reDesign .bar {
+        background-color: #08307a;
+    }
+
+    #drawerButton.reDesign .bar1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    #drawerButton.reDesign .bar2 {
+        opacity: 0;
+    }
+
+    #drawerButton.reDesign .bar3 {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 9px;
+    }
+    header ul {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        z-index: 1000;
+    }
+
+    header ul.open {
+        top: 0;
+    }
+
+    main .mainvisual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+    }
+
+    main .mainvisual h2 {
+        position: static;
+        font-size: 40px;
+    }
+
+    main .usagichan {
+        position: static;
+        margin-top: 42px;
+    }
+
+    main .usagichan img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main .usagichan .usayu .p01 {
+        font-size: 40px;
+    }
+
+    main .usagichan .usayu .p02 {
+        font-size: 24px;
+    }
+
+    #secabout h2 {
+        font-size: 36px;
+        margin-top: 4rem;
+    }
+    #secabout h1 {
+        font-size: 28px;
+        max-width: 322px;
+    }
+
+    #secabout .p03 {
+        font-size: 16px;
+        margin-bottom: 100px;
+    }
+
+    #secabout .div01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secabout .div01 img {
+        display: flex;
+        flex-basis: 0px;
+    }
+
+    #secabout .div01 .div02 {
+        flex-basis: 0px;
+    }
+
+    #secabout .div03 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secabout .div03 img {
+        display: flex;
+        flex-basis: 0px;
+    }
+
+    .div03 .div04 {
+        flex-basis: 0px;
+    }
+
+    #secabout .div05 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secabout .div05 img {
+        display: flex;
+        flex-basis: 0px;
+        object-fit: cover;
+    }
+
+    .div05 .div06 {
+        flex-basis: 0px;
+    }
+    #secabout .div07 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secabout .div07 img {
+        display: flex;
+        flex-basis: 0px;
+        object-fit: cover;
+    }
+
+    .div07 .div08 {
+        flex-basis: 0px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    main #secmenu span,
+    main #secfood span {
+        font-size: 14px;
+    }
+    main .swiper .swiper-wrapper .swiper-slide {
+        max-width: 100%;
+    }
+    main #secevent {
+        padding: 2rem;
+    }
+    main #secevent .eventiframe {
+        width: 100%;
+        margin: 0 auto;
+        gap: 60px;
+    }
+    main #secevent span {
+        padding: 2rem;
+    }
+    main #secsns {
+        display: block;
+    }
+    main #secmap {
+        padding: 2rem;
+        display: block;
+    }
+    main #secmap .mapiframe {
+        width: 100%;
+    }
+    main #secmap .secmaptext span {
+        color: var(--textcolor02);
+        font-size: 16px;
+        margin: 1rem;
+        line-height: 1.4;
+    }
+    main #secfootervisual {
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #secfootervisual h2 {
+        color: var(--textcolor02);
+        height: 300px;
+        font-size: 44px;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-indent: -0.5em;
+        line-height: 1.7;
+    }
+    footer {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    footer img {
+        margin-bottom: 3rem;
+    }
+    footer .footerspan h4 {
+        font-size: 40px;
+    }
+    main #secevent p {
+        font-size: 20px;
+    }
+    main #secevent span,
+    main #secmap .secmaptext span {
+        font-size: 16px;
+    }
+    main #secmap .mapiframe {
+        max-width: 100%;
+    }
+    main #secmap .secmaptext span {
+        line-height: 1;
+    }
+}
+@media screen and(max-width:600px) {
+    .div01 .div02 h4,
+    .div03 .div04 h4,
+    .div05 .div06 h4,
+    .div07 .div08 h4 {
+        font-size: 20px;
+    }
+    .div01 .div02 p,
+    .div03 .div04 p,
+    .div05 .div06 p,
+    .div07 .div08 p {
+        font-size: 12px;
+    }
+    main #secmenu span,
+    main #secfood span {
+        font-size: 12px;
+    }
+    main #secsns {
+        padding: 0;
+    }
+}

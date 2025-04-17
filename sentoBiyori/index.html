@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sento_coding</title>
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="robots" content="noindex, nofollow" />
+</head>
+
+<body>
+    <header>
+        <div id="headerAll">
+            <div class="usaginoyuMainlogo">
+                <h1><img src="image/loading_logo01.png" alt="うさぎの湯ロゴ" /></h1>
+                <h1><img src="image/main_logo02.png" alt="うさぎの湯ロゴ名前" /></h1>
+            </div>
+            <div class="usaginoyuMainnav">
+                <nav>
+                    <ul>
+                        <li><a href="#usaginoyuPlan">うさぎの湯とは？</a></li>
+                        <li><a href="#usaginoyuIntroduction">施設紹介</a></li>
+                        <li><a href="#usaginoyuTime">営業時間</a></li>
+                        <li><a href="#usaginoyuAccess">アクセス</a></li>
+                        <li><a href="#usaginoyuContact">お問い合わせ</a></li>
+                        <li><button id="sauna-reserve-button">予約</button></li>
+                    </ul>
+                </nav>
+                <button id="drawerButton" class="menu-toggle">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--ここから 予約ページのモーダル -->
+    <div id="reserve-modal" class="modal">
+        <div class="modal-content">
+            <h2>サウナ予約</h2>
+
+            <!-- イベントカレンダー画像 -->
+            <div class="calendar-container">
+                <img src="image/event_calendar.jpg" alt="イベントカレンダー" class="calendar-image" />
+            </div>
+
+            <!-- 予約フォーム -->
+            <form id="reserve-form">
+                <label for="date-time">予約日時:</label>
+                <select id="date-time" name="date-time">
+                    <option value="example">例）◯月◯日◯時から30分</option>
+                    <!-- 他の選択肢はJavaScriptで動的に生成できます -->
+                </select><br /><br />
+
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="gender">性別:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">その他</option>
+                </select><br /><br />
+
+                <label for="emergency-contact">緊急連絡先:</label>
+                <input type="text" id="emergency-contact" name="emergency-contact" required /><br /><br />
+
+                <button type="submit">予約を送信</button>
+            </form>
+            <button id="close-modal">閉じる</button>
+        </div>
+    </div>
+    <!-- 予約ページのモーダル ここまで-->
+
+    <main>
+        <section id="usaginoyuTop">
+            <div class="sec01Time">
+                <p>営業時間</p>
+                <dl>
+                    <div class="sec01Time1">
+                        <dt>平日</dt>
+                        <dd>14:00〜24:00</dd>
+                    </div>
+                    <div class="sec01Time1">
+                        <dt>土日祝</dt>
+                        <dd>8:00〜24:00</dd>
+                    </div>
+                    <div class="sec01Time1">
+                        <dt>定休日</dt>
+                        <dd>第2木曜日</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="sec01mainimage">
+                <!-- /* ---------------------------------------------ここからslider---------- */ -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="image/main.jpg" alt="メインのお風呂画像" /></div>
+                        <div class="swiper-slide"><img src="image/main02.jpg" alt="メインのお風呂画像2" /></div>
+                        <div class="swiper-slide"><img src="image/image4.jpg" alt="外観" /></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <!-- <div class="swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- /* ---------------------------------------------sliderここまで---------- */ -->
+
+                <h2><span>ひと湯、</span><span>ひととき。</span></h2>
+            </div>
+        </section>
+
+        <section id="usaginoyuPlan">
+            <div class="usaginoyuPlan01">
+                <div class="usaginoyuBanner"><img src="image/sns_banner.jpg" alt="SNSバナー広告" /></div>
+                <div class="usaginoyuDesign">
+                    <img src="image/design01.png" alt="オレンジ波デザイン" class="wave" />
+                </div>
+
+                <div class="usaginoyuPlan02">
+                    <h3>うさぎの湯とは？</h3>
+                    <p>
+                        昭和36年、うさぎの湯は西宮市丸橋町のこの地で始まりました。<br />
+                        それから約60年、時代が移り変わり、丸橋町の街並みや暮らしも大きく変わりましたが、<br />
+                        私たちは変わったことに寄り添いながら、変わらないものを守り続けます。
+                    </p>
+
+                    <p>
+                        地下水を使用したやわらかいお湯「美肌の湯」で温泉体験を楽しみ、<br />
+                        薪で沸かした約44℃の高温風呂で心身を温めリフレッシュできます。
+                    </p>
+
+                    <p>
+                        さらに、関西では珍しい本格ロウリュサウナも完備しており、リラックスしながら心地よい汗を流せます。<br />
+                        湯上がり後は、地元の牛乳やアイスを楽しみながら、のんびりとしたひとときを過ごし、<br />
+                        レトロなタイル絵とモダンな内装が融合した空間で、懐かしさと新しさを感じていただけます。<br />
+                        60年の歴史とともに、これからもこの街を温められるよう、湯を沸かしてお待ちしております。
+                    </p>
+                    <div class="usaginoyuDesign01">
+                        <img src="image/design01.png" alt="オレンジ波デザイン2" class="wave-second" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-infinity__wrap">
+                <ul class="scroll-infinity__list scroll-infinity__list--left">
+                    <li><img src="image/image1.jpg" alt="ピンクタイルのお風呂" /></li>
+                    <li><img src="image/image6.jpg" alt="ロッカー" /></li>
+                    <li><img src="image/image2.jpg" alt="ブルータイルのお風呂" /></li>
+                    <li><img src="image/image5.jpeg" alt="薪" /></li>
+                    <li><img src="image/image3.jpg" alt="グリーンタイルのお風呂" /></li>
+                    <li><img src="image/image07.jpg" alt="ブルータイル" /></li>
+                    <li><img src="image/image1.jpg" alt="ピンクタイルのお風呂" /></li>
+                    <li><img src="image/image6.jpg" alt="ロッカー" /></li>
+                    <li><img src="image/image2.jpg" alt="ブルータイルのお風呂" /></li>
+                    <li><img src="image/image5.jpeg" alt="薪" /></li>
+                    <li><img src="image/image3.jpg" alt="グリーンタイルのお風呂" /></li>
+                    <li><img src="image/image07.jpg" alt="ブルータイル" /></li>
+                    <li><img src="image/image1.jpg" alt="ピンクタイルのお風呂" /></li>
+                    <li><img src="image/image6.jpg" alt="ロッカー" /></li>
+                    <li><img src="image/image2.jpg" alt="ブルータイルのお風呂" /></li>
+                    <li><img src="image/image5.jpeg" alt="薪" /></li>
+                    <li><img src="image/image3.jpg" alt="グリーンタイルのお風呂" /></li>
+                    <li><img src="image/image07.jpg" alt="ブルータイル" /></li>
+                </ul>
+            </div>
+            <!-- /* ----------------------------------------------------------------------ひとまず追加 */ -->
+            <div class="scroll-infinity__wrap2">
+                <ul class="scroll-infinity__list scroll-infinity__list--left">
+                    <li><img src="image/image1.jpg" alt="ピンクタイルのお風呂" /></li>
+                    <li><img src="image/image6.jpg" alt="ロッカー" /></li>
+                    <li><img src="image/image2.jpg" alt="ブルータイルのお風呂" /></li>
+                    <li><img src="image/image1.jpg" alt="ピンクタイルのお風呂" /></li>
+                    <li><img src="image/image6.jpg" alt="ロッカー" /></li>
+                    <li><img src="image/image2.jpg" alt="ブルータイルのお風呂" /></li>
+                </ul>
+                <ul class="scroll-infinity__list scroll-infinity__list--right">
+                    <li><img src="image/image5.jpeg" alt="薪" /></li>
+                    <li><img src="image/image3.jpg" alt="グリーンタイルのお風呂" /></li>
+                    <li><img src="image/image07.jpg" alt="ブルータイル" /></li>
+                    <li><img src="image/image5.jpeg" alt="薪" /></li>
+                    <li><img src="image/image3.jpg" alt="グリーンタイルのお風呂" /></li>
+                    <li><img src="image/image07.jpg" alt="ブルータイル" /></li>
+                </ul>
+            </div>
+            <!-- /* ----------------------------------------------------------------------ひとまず追加 */ -->
+        </section>
+
+        <section id="usaginoyuIntroduction">
+            <div class="usaginoyuOyusec">
+                <div class="usaginoyuOyuimage"></div>
+                <p class="usaginoyuOyusetsumei">
+                    当館自慢の「美肌の湯」は、地下水を使用したやわらかいお湯で、肌に優しくリラックスした温泉体験をお楽しみいただけます。<br />
+                    約44℃の薪で沸かした高温風呂や、43℃の主浴槽、45℃の熱めの風呂で、体をしっかり温めてリフレッシュできます。<br />
+                    さらに、電気風呂やジェットバスでの血行促進、週替わりの薬湯で季節ごとの癒しを提供しています。
+                </p>
+            </div>
+
+            <div class="usaginoyuSauna">
+                <h4>ロウリュサウナと露天風呂</h4>
+                <div class="usaginoyuSauna01">
+                    <div class="usaginoyuIntroduction01">
+                        <div class="usaginoyuSaunaimage"></div>
+                        <div class="usaginoyuSaunatext">
+                            <h3>ロウリュサウナ</h3>
+                            <p class="usaginoyuSauna02">
+                                当館では関西では珍しい本格ロウリュサウナを完備。<br />
+                                90℃のサウナで、時間別に熱波師による<br />
+                                ロウリュサービスが提供され、<br />
+                                リフレッシュしながら心地よい汗を流せます。<br />
+                                サウナ後は、地下水かけ流しの16℃の水風呂で、<br />
+                                キンキンに冷えた爽快感をお楽しみください。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="usaginoyuIntroduction02">
+                        <div class="usaginoyuSaunatext02">
+                            <h3>露天風呂</h3>
+                            <p class="usaginoyuSauna03">
+                                当館名物の露天風呂では、40℃の炭酸泉でゆったり浸かりながら、<br />
+                                リラックスしたひとときをお過ごしいただけます。<br />
+                                開放感を楽しみつつ脳により良いリラクゼーション効果をもたらします。
+                            </p>
+                        </div>
+                        <div class="usaginoyuSaunaimage01"></div>
+                    </div>
+                </div>
+                <!-- ロウリュサウナと露天風呂内側締めタグ -->
+            </div>
+            <!-- ロウリュサウナと露天風呂外側締めタグ -->
+        </section>
+
+        <!-- /* ---------------------------------------------ここからscroll-logo---------- */ -->
+        <div class="scroll-logo">
+            <div class="bgScr scr01"></div>
+            <div class="bgScr scr02"></div>
+            <div class="bgScr scr03"></div>
+        </div>
+        <!-- /* ---------------------------------------------scroll-logoここまで---------- */ -->
+
+        <!-- cssmaintopここまで -->
+
+        <!-- ここからcssmainbottom  -->
+        <section id="usaginoyuTime">
+            <div class="usaginoyuTime01">
+                <h3>営業時間</h3>
+                <dl>
+                    <div class="time">
+                        <dt>平日</dt>
+                        <dd>14:00-24:00</dd>
+                    </div>
+                    <div class="time">
+                        <dt>土•日•祝</dt>
+                        <dd>8:00-24:00</dd>
+                    </div>
+                    <div class="time">
+                        <dt>定休日</dt>
+                        <dd>第2木曜日</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="usaginoyuDesign03">
+                <img src="image/design02.png" alt="ブルー波デザイン" class="wave" />
+            </div>
+
+            <div class="time0203Wrapper">
+                <div class="usaginoyuTime02">
+                    <h3>入浴料金</h3>
+                    <dl>
+                        <div class="money">
+                            <dt>大人(中学生以上)</dt>
+                            <dd>500円</dd>
+                        </div>
+                        <div class="money">
+                            <dt>小学生</dt>
+                            <dd>200円</dd>
+                        </div>
+                        <div class="money">
+                            <dt>幼児(6歳未満)</dt>
+                            <dd>100円</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="usaginoyuTime03">
+                    <h3>サウナ料金</h3>
+                    <dl>
+                        <dt>300円</dt>
+                        <dd>(貸しタオル付き)</dd>
+                        <div class="timeCampaign">
+                            <dt>SNSキャンペーン実施中</dt>
+                            <dd>詳細はスタッフまで</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="usaginoyuTime04">
+                <h3>手ぶらセット</h3>
+                <dl>
+                    <dt>入浴＋サウナ＋シャンプー＋ボディーソープ</dt>
+                    <dd>1,000円</dd>
+                </dl>
+                <p>※タオルは別料金です</p>
+            </div>
+            <div class="usaginoyuDesign03">
+                <img src="image/design02.png" alt="ブルー波デザイン" class="wave-second" />
+            </div>
+
+            <div class="usagiCalendar">
+                <img src="image/event_calendar.jpg" alt="ロウリュサウナカレンダー" />
+            </div>
+            <!-- /* ここから下サウナコメントうさぎロゴ-----------------------serif-usagi IDとclass名------ */ -->
+            <div id="usagiLogo" class="animate__animated bounceIn">
+                <img src="image/serif_usagi.png" alt="サウナコメントうさぎロゴ" />
+            </div>
+        </section>
+
+        <section class="yuagariSpace">
+            <div class="spaceCategory">
+                <h3>湯上がりスペース</h3>
+                <ul>
+                    <li><img src="image/yuagari1.png" alt="湯上がりスペース画像" /></li>
+                    <li><img src="image/yuagari3_01.jpg" alt="牛乳瓶画像" /></li>
+                    <li><img src="image/yuagari2.jpg" alt="おつまみセット画像" /></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="usaginoyuAccess">
+            <h4>アクセス</h4>
+            <div class="accessText">
+                <p>〒662-0831 兵庫県西宮市丸橋町４−６７</p>
+                <p>阪急西宮北口より徒歩10分</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6556.378289028956!2d135.35461!3d34.7508279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f2481516ec55%3A0xd6f96f8b7ae4bc!2z44CSNjYyLTA4MzEg5YW15bqr55yM6KW_5a6u5biC5Li45qmL55S677yU4oiS77yW77yX!5e0!3m2!1sja!2sjp!4v1742968752196!5m2!1sja!2sjp"
+                    style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="usaginoyuContact">
+            <h4>お問い合わせ</h4>
+            <p>TEL:0798-XX-XXXX</p>
+            <p>usaginoyu@gmail.com</p>
+            <div class="contactimageWrap">
+                <div class="contactImage">
+                    <img src="image/Twitter.png" alt="twitterロゴ画像" />
+                </div>
+                <div class="contactImage02">
+                    <img src="image/Instagram.png" alt="Instagramロゴ画像" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="image/loading_logo01.png" alt="うさぎの湯ロゴ" />
+        <img src="image/main_logo02.png" alt="うさぎの湯ロゴ名前" />
+        <nav>
+            <ul>
+                <li><a href="#usaginoyuTop">ホーム</a></li>
+                <li><a href="#usaginoyuPlan">兎の湯とは？</a></li>
+                <li><a href="#usaginoyuIntroduction">施設紹介</a></li>
+                <li><a href="#usaginoyuTime">営業時間</a></li>
+                <li><a href="#usaginoyuAccess">アクセス</a></li>
+                <li><a href="#usaginoyuContact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <small>&copy;銭湯日和</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+#staff {
+    margin-top: 130px;
+    margin-bottom: 65px;
+}
+
+#staff h1 {
+    color: var(--textmaincolor);
+    font-size: var(--textmainsize);
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+#staff .staffinner {
+    font-size: var(--textsize);
+    color: var(--textmain-color);
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    row-gap: 5rem;
+    margin: 0 auto;
+}
+
+#staff .staffinner .staffbox1,
+#staff .staffinner .staffbox2,
+#staff .staffinner .staffbox3,
+#staff .staffinner .staffbox4 {
+    max-height: 400px;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    background-color: var(--textcolor);
+    border: 1px solid var(--textmaincolor);
+    padding: 1rem;
+}
+
+#staff .staffinner .staffbox1 .staffsec1,
+#staff .staffinner .staffbox2 .staffsec2,
+#staff .staffinner .staffbox3 .staffsec3,
+#staff .staffinner .staffbox4 .staffsec4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#staff .staffinner .staffbox1 .staffsec1 dt,
+#staff .staffinner .staffbox2 .staffsec2 dt,
+#staff .staffinner .staffbox3 .staffsec3 dt,
+#staff .staffinner .staffbox4 .staffsec4 dt {
+    margin-bottom: 0.5rem;
+}
+
+#staff .staffinner .staffbox1 .staffsec1 dd,
+#staff .staffinner .staffbox2 .staffsec2 dd,
+#staff .staffinner .staffbox3 .staffsec3 dd,
+#staff .staffinner .staffbox4 .staffsec4 dd {
+    margin-bottom: 1rem;
+}
+
+#staff .staffinner .staffbox1 p,
+#staff .staffinner .staffbox2 p,
+#staff .staffinner .staffbox3 p,
+#staff .staffinner .staffbox4 p {
+    margin-top: 1rem;
+}
+
+/* ボタンのポジション--------------- */
+
+#staff .staffinner .staffbox1b {
+    position: relative; /* ボタンを親要素の右下に配置するために必要 */
+}
+
+#staff .staffinner .staffbox1b .button {
+    position: absolute; /* 親要素内で絶対配置 */
+    bottom: -3.5rem; /* 親要素の下端に配置 */
+    right: 0; /* 親要素の右端に配置 */
+    margin: 1rem; /* 必要に応じてマージンを追加（ボタンが親要素の端にぴったりくっつかないように） */
+}
+/* ------------------------------ */
+#staff .staffinner .staffbox2b {
+    position: relative; /* ボタンを親要素の右下に配置するために必要 */
+}
+
+#staff .staffinner .staffbox2b .button {
+    position: absolute; /* 親要素内で絶対配置 */
+    bottom: -3.5rem; /* 親要素の下端に配置 */
+    right: 0; /* 親要素の右端に配置 */
+    margin: 1rem; /* 必要に応じてマージンを追加（ボタンが親要素の端にぴったりくっつかないように） */
+}
+/* -------------------------------- */
+#staff .staffinner .staffbox3b {
+    position: relative; /* ボタンを親要素の右下に配置するために必要 */
+}
+
+#staff .staffinner .staffbox3b .button {
+    position: absolute; /* 親要素内で絶対配置 */
+    bottom: -3.5rem; /* 親要素の下端に配置 */
+    right: 0; /* 親要素の右端に配置 */
+    margin: 1rem; /* 必要に応じてマージンを追加（ボタンが親要素の端にぴったりくっつかないように） */
+}
+/* ----------------------------------- */
+#staff .staffinner .staffbox4b {
+    position: relative; /* ボタンを親要素の右下に配置するために必要 */
+}
+
+#staff .staffinner .staffbox4b .button {
+    position: absolute; /* 親要素内で絶対配置 */
+    bottom: -3.5rem; /* 親要素の下端に配置 */
+    right: 0; /* 親要素の右端に配置 */
+    margin: 1rem; /* 必要に応じてマージンを追加（ボタンが親要素の端にぴったりくっつかないように） */
+}
+
+/* メディアクエリ----------------- */
+@media (max-width: 900px) {
+    #staff .staffinner {
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+    }
+
+    #staff .staffinner .staffbox1b .button {
+        position: static; /* ボタンを親要素の右下に配置するために必要 */
+        text-align: center;
+    }
+
+    #staff .staffinner .staffbox2b .button {
+        position: static; /* ボタンを親要素の右下に配置するために必要 */
+        text-align: center;
+    }
+
+    #staff .staffinner .staffbox3b .button {
+        position: static; /* ボタンを親要素の右下に配置するために必要 */
+        text-align: center;
+    }
+
+    #staff .staffinner .staffbox4b .button {
+        position: static; /* ボタンを親要素の右下に配置するために必要 */
+        text-align: center;
+    }
+}

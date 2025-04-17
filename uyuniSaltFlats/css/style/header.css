@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+    position: relative;
+    font-size: 20px;
+    background-image: url(../../images/main01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+header .headerNav {
+    width: 100%;
+    height: auto;
+    background-color: rgba(58, 179, 78, 0.2);
+    position: fixed;
+    z-index: 1000000;
+}
+
+header .headerNav ul {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+}
+
+header .headerNav ul li {
+    padding: 64px 90px;
+    align-self: flex-start;
+}
+
+header .headerNav ul li:hover {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 88px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+header .logoHead {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    width: 30%;
+    max-width: 300px;
+    /* min-width: 393px; */
+}
+
+header .logoHead img {
+    width: 100%;
+    height: auto;
+}
+
+header .Reserve01 {
+    /* display: flex;
+    justify-content: flex-end;
+    padding-right: 16px; */
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10000;
+}
+
+header .Reserve01 img {
+    width: 200px;
+    height: auto;
+}
+
+#drawerButton {
+    position: fixed;
+    right: 4rem;
+    top: 4rem;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+#drawerButton.reDesign .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 9px;
+}
+
+#drawerButton.reDesign .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#drawerButton.reDesign .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 9px;
+}
+
+header .drawer ul {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(35, 123, 76, 0.9);
+    transition: top 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+    font-size: 24px;
+}
+/* .drawerNav01 {
+    display: flex;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+.drawerNav01 li {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header .drawer ul .drawerNav02 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.drawerNav02 span {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 0.5rem;
+}
+
+.drawerNav03 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.drawerNav04 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+header .drawer ul.open {
+    top: 0;
+}
+
+header .drawerNav01 li:hover,
+.drawerNav02 li:hover {
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+/* *****以下は画面幅による文字改行用メディアクエリ***** */
+
+@media (max-width: 1250px) {
+    header h1 {
+        display: inline;
+    }
+
+    header h1 .h1word::before {
+        content: "\A";
+        white-space: pre;
+    }
+}
+
+/* *****以下は画面幅によるフォントサイズ調整メディアクエリ***** */
+
+@media screen and (max-width: 1050px) {
+    header h1 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header .drawer ul {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(35, 123, 76, 0.9);
+        transition: top 0.3s ease;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        color: white;
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    header .headerNav {
+        display: none;
+    }
+
+    header .Reserve01 {
+        max-width: 40%;
+    }
+
+    header .drawer ul .drawerNav02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .drawerNav03 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .drawerNav01 li {
+        padding-left: 2rem;
+    }
+
+    #drawerButton {
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}

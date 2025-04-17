@@ -1,0 +1,401 @@
+/* メイン営業時間 */
+
+main #usaginoyuTime{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+main #usaginoyuTime .usaginoyuTime01{
+    border: solid 4px var(--accentColor);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+main #usaginoyuTime .usaginoyuTime01 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+main #usaginoyuTime .usaginoyuTime01 dl .time{
+    width: 500px;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accentColor);
+    }
+
+main #usaginoyuTime .usaginoyuTime01 dl .time:nth-child(3){
+    margin-bottom: 4rem;
+}
+
+/* ブルー波デザイン1つ目 */
+
+main .usaginoyuDesign03 .wave{
+    width: 350px;
+    position: absolute;
+    right: 50px;
+    top: 450px;
+}
+
+
+/* ここから下入浴時間*/
+
+main #usaginoyuTime .time0203Wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime02{
+    border: solid 4px var(--accentColor);
+    border-radius: 1.5rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 dl .money{
+    width: 300px;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    }
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 dl .money:nth-child(3){
+    margin-bottom: 1rem;
+}
+
+/* ここから下サウナ料金 */
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime03{
+    border: solid 4px var(--accentColor);
+    border-radius: 1.5rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime03 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime03 dl{
+    width: 300px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime03 dl .timeCampaign{
+    font-size: 1rem;
+}
+
+main #usaginoyuTime .time0203Wrapper .usaginoyuTime03 dl dd{
+    margin-bottom: 2rem;
+}
+
+/* ここから下手ぶらセット */
+
+main #usaginoyuTime .usaginoyuTime04{
+    width: 500px;
+    border: solid 4px var(--accentColor);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 auto 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+main #usaginoyuTime .usaginoyuTime04 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main #usaginoyuTime .usaginoyuTime04 dl{
+    width: 300px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+main #usaginoyuTime .usaginoyuTime04 dl dt{
+    /* width: 330px; */
+    font-size: 1rem;
+}
+
+/* ブルー波デザイン2つ目 */
+
+main #usaginoyuTime .usaginoyuDesign03 .wave-second{
+    width: 350px;
+    position: absolute;
+    left: 50px;
+    bottom: 800px;
+}
+
+
+/* ここから下ロウリュカレンダー */
+
+main #usaginoyuTime .usagiCalendar{
+    margin: 1rem 7rem 6rem;
+    
+}
+
+/* ここから下サウナコメントうさぎロゴ-----------------------serif-usagi .を＃------ */
+
+main #usaginoyuTime #usagiLogo{
+    width: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 600px;
+}
+
+/* ここから下湯上がりスペース */
+
+main .yuagariSpace{
+    background-color: var(--mainColor);
+    padding: 6rem;
+}
+
+main .yuagariSpace .spaceCategory{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main .yuagariSpace .spaceCategory h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--backGroundColor);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main .yuagariSpace .spaceCategory ul{
+    background-color: var(--backGroundColor);
+    padding: 1.5rem;
+    display: flex; 
+    gap: 1.5rem;
+}
+main .yuagariSpace .spaceCategory ul li{
+    flex-basis: calc((100% / 3) - (2rem / 3));
+}
+
+main .yuagariSpace .spaceCategory ul li img{
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+/* ここから下アクセス */
+
+main #usaginoyuAccess{
+    max-width: 1024px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main #usaginoyuAccess h4{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+main #usaginoyuAccess .accessText{
+    text-align: center;
+}
+
+main #usaginoyuAccess .map{
+    max-width: 1024px;
+    aspect-ratio: 3/2;
+    width: 80%;
+    height: auto;
+    margin-bottom: 6rem;
+}
+
+/* ここから下お問い合わせ */
+
+main #usaginoyuContact{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main #usaginoyuContact h4{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+main #usaginoyuContact .contactimageWrap{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+
+/* ここから下スマホ版メディアクエリ */
+
+@media screen and (max-width: 768px){
+
+    main #usaginoyuTime .usaginoyuTime01 dl .time{
+        width: 150px;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.25rem;
+        gap: 1rem;
+        }
+    /* 営業時間メディアクエリ締め */
+
+
+    main .usaginoyuDesign03 .wave{
+        width: 400px;
+        position: static;
+    }
+
+    /* ブルー波デザイン1メディアクエリ締め */
+
+    main #usaginoyuTime{
+        margin: 0 1rem;
+    }
+
+    main #usaginoyuTime .time0203Wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    /* ブルー波デザイン2メディアクエリ締め*/
+
+    main #usaginoyuTime .usaginoyuDesign03 .wave-second{
+        width: 400px;
+        position: static;
+    }
+
+
+    main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    
+    main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 dl .money{
+        width: 150px;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.15rem;
+    }
+
+        main #usaginoyuTime .time0203Wrapper .usaginoyuTime02 dl .money dd{
+        align-self: flex-end;
+    }
+    
+
+    main #usaginoyuTime .time0203Wrapper .usaginoyuTime03 h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* 入浴料金とサウナ料金メディアクエリ締め */
+
+    main #usaginoyuTime .usaginoyuTime04{
+        width: auto;
+        padding: 3rem;
+        margin: 0 auto 3rem;
+    }
+
+    main #usaginoyuTime .usaginoyuTime04 dl{
+        width: auto;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    main #usaginoyuTime .usaginoyuTime04 dl dt{
+        font-size: 1rem;
+    }
+
+    /* 手ぶらセットメディアクエリ締め */
+
+
+    /* ここから下ロウリュカレンダー */
+
+    main #usaginoyuTime .usagiCalendar{
+        margin: 1rem auto;
+    }
+
+    main #usaginoyuTime #usagiLogo{
+        width: auto;
+        position: static;
+        margin: 0 auto 1rem;
+
+    }
+
+    /* ここから下湯上がりスペース */
+
+    main .yuagariSpace{
+        padding: 2rem;
+    }
+
+    main .yuagariSpace .spaceCategory ul{
+        padding: 1.5rem;
+        display: flex; 
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    main .yuagariSpace .spaceCategory h3{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    /* ここから下アクセス */
+
+    main #usaginoyuAccess h4{
+        font-size: 2rem;
+    }
+
+    /* ここから下お問い合わせ */
+
+    main #usaginoyuContact h4{
+        font-size: 2rem;
+    }
+
+
+
+}

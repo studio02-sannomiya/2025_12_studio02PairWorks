@@ -1,0 +1,43 @@
+footer {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+footer .footer01 p {
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer nav ul li:hover {
+    background-color: #ffd6a5;
+}
+
+/* 　*****************  360px  ******** */
+
+@media (max-width: 360px) {
+    footer nav ul li {
+        width: 80%; /* 2列になるように */
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+}

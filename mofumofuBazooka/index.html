@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>温泉の湯</title>
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 既存のコード -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 既存のCSS参照の後に配置 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet" />
+    <meta name="robots" content="noindex, nofollow" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/usagi.png" alt="兎の湯" />
+                </div>
+                <div class="logo-text">
+                    <img src="images/usagi-1.png" alt="兎の湯タイトル" />
+                </div>
+            </div>
+            <button class="menu-button" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li>
+                    <a href="#home">
+                        ホーム
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#news">
+                        新着情報
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#kodawari">
+                        兎の湯のこだわり
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#dessert-menu">
+                        デザートメニュー
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#child-debut">
+                        子供と一緒に銭湯デビュー
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#calendar">
+                        イベントカレンダー
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sns-campaign">
+                        SNSキャンペーン
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#price">
+                        料金案内
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#access">
+                        アクセス情報
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero-slideshow">
+            <div class="slide-container">
+                <div class="slide hero-slide fade">
+                    <img src="images/first-1.png" alt="スライド1" />
+                </div>
+                <div class="slide hero-slide fade">
+                    <img src="images/first-2.png" alt="スライド2" />
+                </div>
+                <div class="slide hero-slide fade">
+                    <img src="images/first-3.png" alt="スライド3" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ニュースセクション -->
+        <section id="news" class="news-section">
+            <div class="news-header">
+                <img src="images/news.png" alt="ニュース" />
+            </div>
+
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">
+                        <span>4/1</span>
+                    </div>
+                    <div class="news-title">いちご風呂スペシャルウィーク！</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <span>4/4</span>
+                    </div>
+                    <div class="news-title">金曜ガチャガチャ大放出DAY</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <span>4/6</span>
+                    </div>
+                    <div class="news-title">春休み特別企画！キッズアイスバイキング</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <span>4/8</span>
+                    </div>
+                    <div class="news-title">待望の桜湯がついに解禁！</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- こだわりセクション -->
+        <section id="kodawari" class="kodawari-section">
+            <div class="kodawari-header">
+                <img src="images/usagiyu.png" alt="兎の湯のこだわり" />
+            </div>
+
+            <div class="kodawari-list">
+                <!-- 1つ目のこだわり（画像左・テキスト右） -->
+                <!-- 1つ目のこだわり（画像右・テキスト左に変更） -->
+                <div class="kodawari-item">
+                    <div class="kodawari-text">
+                        <h3>美肌の湯</h3>
+                        <p>
+                            安心感のある深さと、やわらかい<br />湯加減。外の緑を眺めながら、<br />親子で並んで入れる、<br />やさしいお風呂です。
+                        </p>
+                        <p>
+                            温度：約40℃（やわらかめの適温）
+                            <br />
+                            場所：露天エリア奥・庭園前
+                        </p>
+                    </div>
+                    <div class="kodawari-image">
+                        <img src="images/kodawari-1.jpg" alt="こだわり1" />
+                    </div>
+                </div>
+
+                <!-- 2つ目のこだわり（変更なし） -->
+                <div class="kodawari-item reverse">
+                    <div class="kodawari-text">
+                        <h3>薪で沸かした熱湯</h3>
+                        <p>
+                            文薪でじっくりと炊き上げたお湯<br />は、肌を包み込むような熱さが<br />魅力です。<br />
+                            静かな庭の景色とともにどうぞ。
+                        </p>
+
+                        <p>
+                            湯温：約44〜45℃（高温）
+                            <br />
+                            設置場所：露天エリア・庭園前
+                        </p>
+                    </div>
+                    <div class="kodawari-image">
+                        <img src="images/kodawari-2.jpg" alt="こだわり2" />
+                    </div>
+                </div>
+
+                <!-- 3つ目のこだわり（画像右・テキスト左に変更） -->
+                <div class="kodawari-item">
+                    <div class="kodawari-text">
+                        <h3>ロウリュウサウナ</h3>
+
+                        <p>
+                            高温のサウナストーンにアロマ水を かけ、立ち上がる蒸気が体を<br />包み込む「ロウリュ」じっくり<br />
+                            汗をかいて、ととのいの境地へ。
+                        </p>
+
+                        <p>
+                            室温：約90度
+                            <br />
+                            構造：木製ベンチ 間接照明あり
+                        </p>
+                    </div>
+                    <div class="kodawari-image">
+                        <img src="images/kodawari-3.jpg" alt="こだわり3" />
+                    </div>
+                </div>
+
+                <!-- 4つ目のこだわり（変更なし） -->
+                <div class="kodawari-item reverse">
+                    <div class="kodawari-text">
+                        <h3>キッズ向けアイス</h3>
+                        <p>
+                            おふろのあとは、ごほうびタイム。<br />湯あがりにぴったりな、人気の<br />
+                            ミルクソフト。おとなも一緒に食べ<br />たくなる、やさしい味です。
+                        </p>
+
+                        <p>
+                            対象：キッズ・ファミリー向け
+                            <br />
+                            場所：湯上がりスペース 冷蔵ケース横
+                        </p>
+                    </div>
+                    <div class="kodawari-image">
+                        <img src="images/kodawari-4.jpg" alt="こだわり4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- デザートメニューセクション -->
+        <section id="dessert-menu" class="dessert-section">
+            <div class="dessert-header">
+                <img src="images/dessert_menu.png" alt="デザートメニュー" />
+            </div>
+
+            <div class="sweets">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/アイス.png" alt="デザート1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/パフェ.png" alt="デザート2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/プリン.png" alt="デザート3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/かき氷.png" alt="デザート4" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/フルーツ牛乳.png" alt="デザート5" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ラムネ.png" alt="デザート5" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ここから新しいコードに置き換え -->
+        <!-- 子供銭湯デビューセクション（新しいデザイン） -->
+        <div id="child-debut" class="sec04">
+            <div class="title-with-rabbit">
+                <h2>
+                    <img src="images/child_debut.png" alt="デビュー" />
+                </h2>
+                <!-- ここにうさぎを配置 -->
+                <div class="usagijump1">
+                    <p>
+                        <img src="images/うさぎ走 1.png" alt="うさぎでてくる" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="sec04title">
+                <p>はじめての銭湯、これがあれば安心！</p>
+            </div>
+            <div class="sec04top">
+                <div class="sec04box">
+                    <p>
+                        <img src="images/アセット 4 1.png" alt="タオル絵" />
+                    </p>
+                    <p>
+                        <img src="images/Frame 163.png" alt="レンタル可能" />
+                    </p>
+                </div>
+                <div class="sec04box">
+                    <p>
+                        <img src="images/アセット 7 1.png" alt="お風呂の椅子" />
+                    </p>
+                    <p>
+                        <img src="images/Frame 164.png" alt="小さい椅子あります" />
+                    </p>
+                </div>
+            </div>
+            <div class="sec04bottom">
+                <div class="sec04box">
+                    <p>
+                        <img src="images/アセット 8 2.png" alt="ドリンクの絵" />
+                    </p>
+                    <p>
+                        <img src="images/Frame 165.png" alt="ドリンクサービス" />
+                    </p>
+                </div>
+                <div class="sec04box">
+                    <p>
+                        <img src="images/アセット 9 2.png" alt="うさぎの絵" />
+                    </p>
+                    <p>
+                        <img src="images/Frame 166.png" alt="割引あり" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- イベントカレンダーセクション（新しいデザイン） -->
+        <div id="calendar" class="sec05">
+            <h2>
+                <img src="images/calendar.png" alt="カレンダー" />
+            </h2>
+            <p>
+                <img src="images/カレンダー_4月.png" alt="カレンダー" />
+            </p>
+        </div>
+
+        <!-- SNSキャンペーンセクション（新しいデザイン） -->
+        <div id="sns-campaign" class="sec06">
+            <h2>
+                <img src="images/sns_image.png" alt="キャンペーン" />
+            </h2>
+
+            <div class="cam01">
+                <div class="cam01left">
+                    <p class="main01">01</p>
+                    <p class="setumei">兎の湯アカウントをフォロー</p>
+                </div>
+
+                <div class="cam01right">
+                    <div class="cam01flex">
+                        <p class="inst">
+                            <img src="images/2227-removebg-preview.png" alt="インスタ" />
+                        </p>
+                        <p class="usagi">
+                            <img src="images/うさぎフォロー.png" alt="うさぎフォロー" />
+                        </p>
+                    </div>
+                    <p class="acount">@usagi_gram</p>
+                </div>
+            </div>
+
+            <!--02-->
+            <div class="cam02">
+                <p class="inst02">
+                    <img src="images/インスタ写真.png" alt="インスタ" />
+                </p>
+                <div class="cam02right">
+                    <p class="main02">02</p>
+                    <p class="setumei">「兎の湯」についての感想などを投稿</p>
+                </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="cam03">
+                <div class="cam03left">
+                    <p class="main03">03</p>
+                    <p class="setumei">ロゴ入り公式グッズをプレゼント</p>
+                    <p class="tyuui">※フロントでお伝えください</p>
+                </div>
+
+                <div class="cam03right">
+                    <p class="bag">
+                        <img src="images/Tote_Bag_Mockup_2-removebg-preview.png" alt="バッグ" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 料金案内セクション（新しいデザイン） -->
+        <div id="price" class="sec07">
+            <h2>
+                <img src="images/fee_guide.png" alt="料金案内" />
+            </h2>
+            <div class="sec071">
+                <p>大人（中学生以上）</p>
+                <p class="money">500円</p>
+            </div>
+            <div class="sec071">
+                <p>小学生</p>
+                <p class="money">200円</p>
+            </div>
+            <div class="sec071">
+                <p>幼児（6歳未満）</p>
+                <p class="money">100円</p>
+            </div>
+            <div class="sec071">
+                <p>サウナ追加料金</p>
+                <p class="money">300円</p>
+            </div>
+            <div class="sec071">
+                <p>家族3人以上〜</p>
+                <p class="money">10%off</p>
+            </div>
+        </div>
+
+        <!-- アクセス情報セクション（新しいデザイン） -->
+        <div id="access" class="sec08">
+            <h2>
+                <img src="images/access_information.png" alt="アクセス情報" />
+            </h2>
+
+            <div class="sec08box">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6556.378289028956!2d135.35465291534425!3d34.7508279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f2481516ec55%3A0xd6f96f8b7ae4bc!2z44CSNjYyLTA4MzEg5YW15bqr55yM6KW_5a6u5biC5Li45qmL55S677yU4oiS77yW77yX!5e0!3m2!1sja!2sjp!4v1743089713425!5m2!1sja!2sjp"
+                        style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="sec08text">
+                    <p>〒662-0831</p>
+                    <p>兵庫県西宮市丸橋町4-6 7</p>
+                    <p>阪急西宮北口から徒歩5分</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="usagijump2">
+            <p>
+                <img src="images/うさぎ走 2.png" alt="うさぎでてくる" />
+            </p>
+        </div>
+
+        <!-- フッター（新しいデザイン） -->
+        <footer>
+            <div class="footertext">
+                <div class="footerflex">
+                    <p>営業時間：14:00〜23:00</p>
+                    <p>定休日：水曜日</p>
+                </div>
+                <p><small>&copy;2025 兎の湯</small></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+<div class="floating-elements">
+    <div class="floating-element oke1 pos1"></div>
+    <div class="floating-element oke1 pos2"></div>
+    <div class="floating-element oke2 pos3"></div>
+    <div class="floating-element oke2 pos4"></div>
+</div>
+
+</html>

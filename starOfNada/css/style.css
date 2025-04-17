@@ -1,0 +1,909 @@
+/* セクションの共通デザイン＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main section {
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 82px;
+}
+main .H2Wrapper {
+    /* background-color: red; */
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 5px solid yellow; */
+}
+main section h2 {
+    text-align: center;
+    font-size: 42px;
+}
+/* セクションの共通デザイン＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* スクロールアニメーション＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* 動き＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#seigaiha_Right {
+    width: 300px;
+    height: auto;
+    background-image: url(../images/seigaiha.png);
+    aspect-ratio: 30/25;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(10px);
+    z-index: -100; */
+}
+
+#seigaiha_Center {
+    width: 250px;
+    height: auto;
+    background-image: url(../images/seigaiha.png);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#seigaiha_Left {
+    width: 250px;
+    height: auto;
+    background-image: url(../images/seigaiha.png);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* 動き＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+/* 位置＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* ヒストリーの右横 */
+
+
+#history .H2Wrapper{
+    height: 200px;
+    width: auto;
+    /* border: 5px solid red; */
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* #history .H2Wrapper .fontF {
+    background-color: pink;
+} */
+
+#history .H2Wrapper #seigaiha_Right {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 80%;
+    margin-bottom: 10px;
+    /* top: 1000%; */
+    /* z-index: 100; */
+}
+
+
+/* スライダー上の左 */
+#usaginoyunituite .sliderWrapper{
+    position: relative;
+}
+#usaginoyunituite .sliderWrapper #seigaiha_Right {
+    /* width: 200px;
+    height: 200px; */
+position: absolute;
+right: 0%;
+top: 50%;
+/* border: 5px solid red; */
+}
+
+#usaginoyunituite .sliderWrapper #seigaiha_Left {
+    width: 200px;
+    height: auto;
+position: absolute;
+left: 0%;
+top: -70%;
+/* border: 5px solid blue; */
+}
+
+
+
+/* スライダー下の右 */
+#history .H2Wrapper{
+    position: relative;
+}
+#history .H2Wrapper #seigaiha_Right {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    bottom: -5%;
+}
+
+
+
+/* ページ下の左角 */
+footer .footerWrapper{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    /* border: 5px solid blue; */
+}
+footer .footerWrapper #seigaiha_Left {
+    width: 200px;
+    height: auto;
+position: absolute;
+left: -10%;
+bottom: -230%;
+}
+/* スクロールアニメーション＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* 料金表ボタンはポップアップ用に再設定＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#sec01 .button01 p {
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: #a06754;
+    font-family: "Shippori Mincho", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4ede6;
+    text-align: center;
+}
+
+#sec01 .button01 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 料金表ボタンはポップアップ用に再設定＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.flyerBox {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 中心に移動 */
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    /* border: 5px solid red; */
+}
+
+#sec01 .flyerBox.active {
+    width: 50vw;
+    height: auto;
+    opacity: 1;
+    margin: 0 auto;
+    background-image: url(../images/choujyuugiga_image/chojyu_nyuuyokuryoukin.jpg);
+    aspect-ratio: 144/120;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 料金表ポップアップ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+
+
+
+
+
+
+
+/* ボタン＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main .button_kyotu {
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: #a06754;
+    font-family: "Shippori Mincho", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4ede6;
+    text-align: center;
+}
+
+main .button_kyotu_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+/* ボタン＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* レトロフォント＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../851letrogo_007.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* レトロフォント＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+html,
+body {
+    background-color: #f4ede6;
+    color: #9c6553;
+    font-family: "Shippori Mincho", serif;
+    /* font-family: 'CustomFont', sans-serif; */
+}
+
+.fontF {
+    font-family: 'CustomFont';
+}
+
+span {
+    font-family: 'CustomFont';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ヘッダー（ナビゲーション）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+header .navWrapper {
+    width: 100%;
+    height: 120px;
+    background-color: #57bebc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ↓兎の湯の塊と、ヒストリーとかのナビゲーションの塊の間のスペース */
+    gap: 1rem;
+}
+
+header .navWrapper .omisenoOnamae {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ↓ロゴと銭湯のお名前の間のスペース */
+    gap: 1rem;
+
+}
+header .navWrapper h1 img {
+    width: 70px;
+    height: 70px;
+}
+
+header .navWrapper h2 {
+    color: #08102c;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+ul {
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ad1e2f;
+        /* ここ↓↓修正 */
+        gap: 1rem;
+}
+
+/* 亀井追加 */
+header ul div {
+    display: none;
+}
+
+/* 亀井追加ここまで */
+
+
+
+/* ヘッダー（ナビゲーション）＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+
+/* ファーストビュー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#first-view {
+    width: 100%;
+    height: 720px;
+    background-image: url(../images/fasutobyu.png);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+#first-view h2 {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: 3rem;
+    color: #08102c;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: 550px;
+}
+/* ファーストビュー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ヒストリー */
+main #history .sectionSetumei {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main #history img {
+    /* border: 1px solid blue; */
+    width: 60%;
+}
+
+main #history p {
+    /* border: 1px solid green; */
+    width: 40%;
+}
+
+/* ヒストリー */
+
+
+
+/* おしらせ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main #oshirase .H2Wrapper img {
+    width: 180px;
+    height: 182px;
+}
+
+/* 亀井追記 */
+.oshiraseG {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 150px;
+    overflow: hidden scroll;
+}
+
+.oshiraseBox {
+    border-bottom: 1px solid #57bebc;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.oshiraseBox dt {
+    /* border: 1px solid red; */
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.oshiraseBox dd {
+    /* border: 1px solid blue; */
+    margin-left: 5rem;
+}
+
+/* ここまで亀井追記 */
+/* おしらせ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* 要相談：うさぎのゆについて */
+/* 相談内容：右の画像のサイズ。デザインカンプ上はw150px,h140.42。今のコードはw150px,h150px */
+main #usaginoyunituite .H2Wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+/* スライダー */
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* スライダー */
+/* うさぎのゆについて */
+/* アイテム */
+main #item .H2Wrapper img {
+    width: 240px;
+    height: 240px;
+}
+
+main #item .itemWrapper img {
+    width: 320px;
+    height: auto;
+    /* aspect-ratio: 350/230; */
+}
+
+/* 1000pxの幅に3つのコンテンツ。 */
+/* 350pxだと3つで1050pxとなってはみ出る。 */
+/* 1rem=16pxのスペースを写真の間に入れる＝間は2つなので32px */
+/* (1000-32)/3=322.666666667でキリ悪い */
+/* widthを320pxにして、space-between使う方が綺麗かも */
+/* w350px,h230pxの比率は維持したいので、widthは先ほど仮で設定した固定の320px */
+/* heightはauto、aspectで350x230を入れるやり方でとりあえず入れています。 */
+
+main #item .itemWrapper .itemWrapper_text {
+    margin-top: 32px;
+}
+
+main #item .itemWrapper .itemWrapper_text p {
+    text-align: center;
+}
+
+/* アイテム */
+
+
+
+
+
+
+
+/* 確認内容：自撮りうさちゃんのサイズ。とりあえず今のコードは下の画像サイズのw368px,h264px。 */
+main #SNS .H2Wrapper img {
+    width: 368px;
+    height: 264px;
+}
+
+main #SNS .SNS_Wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    /* background-color: blue; */
+}
+
+main #SNS .SNS_Wrapper .X_Wrapper .twitter-timeline {
+    margin: 0 auto;
+}
+
+main #SNS .SNS_Wrapper .Instagram_Wrapper .tiktok-embed {
+    width: 50%;
+    height: auto;
+}
+
+/* SNS */
+
+
+
+
+
+
+/* アクセス・プライス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+main #access_price .access_price_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* アクセス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main #access_price .H2Wrapper img {
+    width: 150px;
+    height: 150px;
+    gap: 5%;
+}
+
+main #access_price .googlemapWrapper {
+    width: 60%;
+    height: auto;
+}
+
+main #access_price .googlemapWrapper .button_kyotu_div {
+    display: flex;
+    justify-content: center;
+}
+
+main #access_price .googlemapWrapper .button_kyotu_div .button_kyotu {
+    margin-top: 32px;
+}
+
+/* アクセス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+/* プライス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+main #access_price .addressPriceWrapper {
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+/* プライス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* アクセス・プライス＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* TOPに戻る＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    /* 画面下から20pxの位置 */
+    right: 20px;
+    /* 画面右から20pxの位置 */
+    padding: 10px 15px;
+    /* background-color: #007bff; */
+    color: white;
+    /* ボタンの文字色 */
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    /* 最初は表示しない */
+    z-index: 1000;
+    /* 他のコンテンツより前に表示 */
+}
+
+/* #scrollToTop:hover {
+    background-color: #0056b3; 
+}
+もしホバーしたら何かしたくなったら */
+
+main .returnTopButton img {
+    width: 140px;
+    height: 94.11px;
+}
+
+/* TOPに戻る＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+/* フッター＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #57bebc;
+    color: #f4ede6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+/* フッター＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* メディアクエリ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* ここから下ハンバーガーメニュー亀井追記 */
+
+/* ここ増やした */
+@media screen and (max-width:930px) {
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    header .navWrapper h2 {
+        font-size: 13px;
+    }
+
+}
+
+/* ここまで */
+
+
+@media screen and (max-width:800px) {
+    header .navWrapper h1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .navWrapper h2 {
+        color: #08102c;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+
+    main #access_price .access_price_wrapper {
+        display: block;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    main #access_price .addressPriceWrapper {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    main #access_price .googlemapWrapper {
+        margin: 0 auto;
+    }
+
+    main #access_price .googlemapWrapper iframe {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main #item .itemWrapper img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    main #item .itemWrapper img {
+        margin-top: 1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:700px) {
+
+    header .navWrapper h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .navWrapper h2 {
+        color: #08102c;
+        font-size: 14px;
+    }
+
+    main #history .sectionSetumei {
+        /* border: 1px solid red; */
+        display: block;
+    }
+
+    main #history img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #history .sectionSetumei p {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    main #item .itemWrapper img {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    main #access_price .googlemapWrapper {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main #access_price .googlemapWrapper iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    main #access_price .access_price_wrapper {
+        display: block;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+main #access_price .addressPriceWrapper {
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+
+
+    #usaginoyunituite .H2Wrapper h2 {
+        font-size: 24px;
+    }
+
+
+    #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #f4ede6;
+        transition: 0.3s;
+        margin-bottom: 8px;
+    }
+
+    .menu-toggle.reDesing span:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .menu-toggle.reDesing span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.reDesing span:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    header ul {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background-color: #57bebc;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        z-index: 1000;
+        transition: all 0.3s linear;
+    }
+
+    /* 亀井追加 */
+    header ul div {
+        display: block;
+    }
+
+    header ul div p img:nth-of-type(1) {
+        width: 120px;
+        height: auto;
+        margin: 0 0 1rem 1rem;
+    }
+
+    header ul div p img:nth-of-type(2) {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+        background-color: rgba(244, 237, 230, 0.6);
+    }
+
+    /* 亀井追記ここまで */
+    header ul.open {
+        top: 0;
+    }
+
+
+    /* ****************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ここから3.31追記 */
+
+    #first-view h2 {
+        font-size: 2rem;
+    }
+
+    main section h2 {
+        font-size: 24px;
+
+    }
+
+    main #item .H2Wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+
+    main #item .itemWrapper img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    main #item .itemWrapper img {
+        margin-top: 1rem;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    main #SNS .H2Wrapper img {
+        width: 150px;
+        height: auto;
+    }
+
+    main #SNS .SNS_Wrapper {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    main #access_price .H2Wrapper img {
+        width: 100px;
+        height: 100px;
+        gap: 1rem;
+    }
+
+
+    main #access_price .googlemapWrapper iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    main #access_price .addressPriceWrapper {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+
+
+}

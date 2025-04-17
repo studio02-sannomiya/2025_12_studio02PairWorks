@@ -1,0 +1,83 @@
+main #map h2 {
+    font-size: var(--text-size3);
+    color: var(--text-color2);
+    font-family: var(--fontfamily2);
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+main #map .mapWrap {
+    display: flex;
+    gap: 16px;
+}
+main #map .map {
+    width: 100%;
+    max-width: 500px;
+}
+main #map .map iframe {
+    width: 100%;
+    height: 700px;
+    flex-basis: 50%;
+}
+
+main #map .kihon {
+    background-color: var(--text-color3);
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+    flex-basis: 50%;
+    margin-bottom: 16px;
+}
+main #map .kihon h3 {
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size3);
+    color: #bc7c4e;
+}
+
+main #map .kihon p {
+    color: var(--text-color1);
+    text-align: center;
+}
+
+main #map .access {
+    background-color: var(--text-color3);
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+    flex-basis: 50%;
+    margin-bottom: 16px;
+}
+
+main #map .access h3 {
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size3);
+    color: #bc7c4e;
+}
+main #map .access h4 {
+    color: var(--text-color1);
+    font-size: var(--text-size2);
+}
+
+main #map .access p {
+    color: var(--text-color2);
+    font-family: var(--fontfamily4);
+}
+main #map .access .color {
+    color: red;
+}
+
+@media screen and (max-width: 1000px){
+    main #map{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #map{
+        margin: 0 auto;
+    }
+    .mapWrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

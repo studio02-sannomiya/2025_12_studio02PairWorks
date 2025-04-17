@@ -1,0 +1,58 @@
+#style h1 {
+    color: var(--textmaincolor);
+    font-size: var(--textmainsize);
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 130px;
+}
+
+#style .stylebox .styleimgbox .styleimg {
+    width: 222px;
+    flex-basis: 20%;
+}
+
+#style .stylebox {
+    /* display: flex; */
+    max-width: 1110px;
+}
+
+#style .stylebox .styleimgbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    /* flex-direction: row; */
+}
+#style .stylebox .button {
+    margin-top: 35px;
+    text-align: end;
+}
+
+/* ----------ここからメディアクエリ------------- */
+
+@media (max-width: 1120px) {
+    #style .stylebox .styleimgbox {
+        margin: 0 1rem;
+    }
+    #style .stylebox .button {
+        text-align: end;
+        margin: 1rem 1rem 0 0;
+    }
+}
+
+@media (max-width: 393px) {
+    #style .stylebox .styleimgbox .styleimg {
+        flex-basis: 50%;
+    }
+
+    #style .stylebox .button {
+        text-align: center;
+        margin: 1rem 1rem 0 0;
+    }
+
+    #style h1 {
+        font-size: 32px; /* 文字サイズを14pxに変更 */
+        margin-top: 40px; /* 上部のマージンを調整 */
+        margin-bottom: 30px; /* 下部のマージンを調整 */
+    }
+}

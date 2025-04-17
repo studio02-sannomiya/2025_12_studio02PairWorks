@@ -1,0 +1,99 @@
+@import url(style/header.css);
+@import url(style/histry.css);
+@import url(style/slider01.css);
+@import url(style/news.css);
+@import url(style/ofuro.css);
+@import url(style/ofuro_kasou.css);
+@import url(style/Tebura.css);
+@import url(style/calender.css);
+@import url(style/slider02.css);
+@import url(style/food.css);
+@import url(style/map.css);
+@import url(style/footer.css);
+@import url(style/drawermenu.css);
+@import url(style/mediaqery.css);
+
+body {
+    font-family: "Zen Maru Gothic", serif;
+    font-family: "Kiwi Maru", serif;
+    font-family: "M PLUS 1", sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+:root {
+    --backgroundcolor1: #8baeaa;
+    --backgroundcolor2: #bc7c4e;
+    --fontfamily1: Zen Maru Gothic;
+    --fontfamily2: Kiwi Maru;
+    --fontfamily3: Nanum Gothic;
+    --fontfamily4: Mplus1p;
+    --text-color1: #333333;
+    --text-color2: #ffffff;
+    --text-color3: #d9d05b;
+    --text-color4: #8baeaa;
+    --text-color5: #68736a;
+    --pading1: 1rem;
+    --pading2: 2rem;
+    --pading3: 3rem;
+    --margin1: 1rem;
+    --margin2: 2rem;
+    --margin3: 3rem;
+    --text-size1: 1rem;
+    --text-size2: 1.5rem;
+    --text-size3: 2rem;
+    --text-size4: 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* main #wrapper {
+    background-color: rgba(139, 174, 170, 0.6);
+    padding-bottom: 1rem;
+} */
+
+main .allwrap{
+    background-image: url(/images/1x/haikei4.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    /* height: auto; */
+}
+/* 
+クリックするまで隠す↓ */
+#drawerMenuContent {
+    display: none; /* 初期状態では非表示 */
+}
+
+#drawerMenuContent.open {
+    display: block; /* ドロワーメニューが開かれたときに表示 */
+}
+
+/* 元々のヘッダーを隠す↓ */
+#nav nav {
+    transition: opacity 0.3s ease; /* アニメーションを追加 */
+}
+
+#nav nav.hidden {
+    opacity: 0;
+    pointer-events: none; /* クリックイベントを無効化 */
+}
+
+
+#drawerMenuContent {
+    display: none;
+    position: fixed; /* 追記 */
+    top: 0; /* 追記 */
+    left: 0; /* 追記 */
+    width: 100%; /* 追記 */
+    z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+
+#drawerMenuContent.open {
+    display: block;
+}

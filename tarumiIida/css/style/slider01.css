@@ -1,0 +1,40 @@
+/* Swiperのスライド画像をSwiperの大きさにフィットさせるcss */
+#slider01 .swiper-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .slider {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main .slider img {
+    max-width: 1000px;
+    height: 30vh;
+}
+
+.swiper-slide img {
+    width: 1000px;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 必要に応じて高さを指定 */
+}
+
+.swiper-slide img {
+    max-width: 100%; /* 画像がスライドの幅を超えないように */
+    max-height: 100%; /* 画像がスライドの高さを超えないように */
+    object-fit: cover; /* 画像の比率を保ちながら、スライド内で収まるように調整 */
+}
+/***************** メディアクエリ 1000px ******************/
+@media screen and (max-width: 1000px) {
+    main .slider {
+        width: 90%;
+    }
+}

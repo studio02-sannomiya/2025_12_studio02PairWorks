@@ -1,0 +1,61 @@
+#drawerMenuContent {
+    background-color: rgba(217, 208, 91, 1.0);
+    max-width: 2500px;
+    height: 1000px;
+    padding: 50px;
+    z-index: 20000;
+}
+
+.drawermenu {
+    font-size: var(--text-size2);
+    font-family: var(--fontfamily3);
+    color: var(--text-color2);
+    padding-top: var(--pading3);
+    margin: 0 auto;
+    max-width: 393px;
+    padding: 16px;
+}
+
+.drawermenu .TOP {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: var(--pading1);
+}
+.drawermenu .histry {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: var(--pading1);
+}
+.drawermenu .News {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: var(--pading1);
+}
+.drawermenu .ofuro {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: var(--pading1);
+}
+.drawermenu .map {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding: var(--pading1);
+}
+.ahiru img {
+    position: fixed;
+    bottom: -15px;
+    left: 190px;
+    max-width: 300px;
+    height: auto;
+}
+
+

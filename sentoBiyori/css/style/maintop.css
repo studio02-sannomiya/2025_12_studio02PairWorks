@@ -1,0 +1,549 @@
+/* メイントップCSS */
+
+main #usaginoyuTop{
+    max-width: 1024px;
+    margin: 2rem auto 0;
+}
+
+main #usaginoyuTop .sec01Time{
+    display: flex;
+    gap: 2rem;
+}
+
+main #usaginoyuTop .sec01Time dl{
+    display: flex;
+    gap: 1rem;
+}
+
+main #usaginoyuTop .sec01Time dl .sec01Time1{
+    display: flex;
+    gap: 1rem;
+}
+
+/* ここから下メイン画像とキャッチコピー */
+
+main #usaginoyuTop .sec01mainimage{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------ここからslider---------- */
+main #usaginoyuTop .sec01mainimage .swiper {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+main #usaginoyuTop .sec01mainimage .swiper-slide img {
+    width: 850px;
+    height: 100%;
+    object-fit: cover;
+}
+/* ---------------------------------------------sliderここまで---------- */
+
+main #usaginoyuTop .sec01mainimage h2{
+    writing-mode: vertical-rl;
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: left;
+    letter-spacing: 1rem;
+}
+
+main #usaginoyuTop .sec01mainimage h2 span{
+    display: block;
+}
+
+main #usaginoyuTop .sec01mainimage h2 span:nth-child(2){
+    text-align: right;
+}
+
+
+/* ここから下メインうさぎの湯とは？CSS */
+
+main #usaginoyuPlan {
+    width: 100%;
+    overflow: hidden; /* コンテナからはみ出す部分を隠す */
+    position: relative;
+}
+
+main #usaginoyuPlan .usaginoyuPlan01{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuBanner img{
+    display: block;
+    margin-left: auto;
+}
+
+/* この下お湯動かす画像CSS */
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign img{
+    width: 400px;
+    position: absolute;
+    left: 80px;
+    top: 350px;
+}
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign01 img{
+    width: 400px;
+    position: absolute;
+    right: 80px;
+    top: 550px;
+}
+
+.wave {
+    animation: waveAnimation 10s ease-in-out infinite; /* アニメーションを適用 */
+}
+
+/* ウェーブアニメーション */
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(0) translateX(0); /* 初期位置 */
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px); /* 上に動かしつつ、右へ少し移動 */
+    }
+    50% {
+        transform: translateY(0) translateX(30px); /* 元の高さに戻り、右に移動 */
+    }
+    75% {
+        transform: translateY(20px) translateX(10x); /* 下に動かしつつ、右へ少し移動 */
+    }
+    100% {
+        transform: translateY(0) translateX(0); /* 初期位置に戻る */
+    }
+}
+
+.wave-second {
+    animation: waveAnimationReverse 10s ease-in-out infinite; /* 逆のアニメーションを適用 */
+}
+
+/* 逆向きのウェーブアニメーション */
+@keyframes waveAnimationReverse {
+    0% {
+        transform: translateY(0) translateX(0); /* 初期位置 */
+    }
+    25% {
+        transform: translateY(-20px) translateX(-10px); /* 上に動かしつつ、左へ少し移動 */
+    }
+    50% {
+        transform: translateY(0) translateX(-30px); /* 元の高さに戻り、左に移動 */
+    }
+    75% {
+        transform: translateY(20px) translateX(-10px); /* 下に動かしつつ、左へ少し移動 */
+    }
+    100% {
+        transform: translateY(0) translateX(0); /* 初期位置に戻る */
+    }
+}
+/************** お湯動かす画像CSS ここまで*************/
+
+/* ここから下うさぎの湯説明文CSS */
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuPlan02{
+
+    margin-bottom: 2rem;
+}
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuPlan02 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 8rem;
+}
+
+main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuPlan02 p{
+    margin: 1.5rem 6rem 0 10rem;
+}
+
+/* ここから下メイン写真スクロールアニメーションCSS */
+
+
+main #usaginoyuPlan .scroll-infinity__wrap {
+    overflow: hidden; /* はみ出た部分を非表示 */
+}
+
+main #usaginoyuPlan .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto; /* リスト全体の幅を自動調整 */
+}
+
+main #usaginoyuPlan ul li {
+    flex-shrink: 0; /* 縮小を防ぐ */
+    width: calc(100vw / 6);
+    height: auto;
+    
+}
+
+main #usaginoyuPlan .scroll-infinity__list--left {
+    animation: infinity-scroll-left 15s linear infinite;
+}
+
+main #usaginoyuPlan ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes infinity-scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* ちょうど半分だけ動かす */
+    }
+}
+
+/* ----------------------------------------------------------------------ひとまず追加 */
+.scroll-infinity__wrap2 {
+    display: none;
+}
+@keyframes infinity-scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* ----------------------------------------------------------------------ひとまず追加 */
+
+/* ここから下メインお風呂紹介CSS */
+
+main #usaginoyuIntroduction{
+    margin-top: 3rem;
+}
+
+main #usaginoyuIntroduction .usaginoyuOyusec{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main #usaginoyuIntroduction .usaginoyuOyusec .usaginoyuOyuimage{
+    background-image: url(../../image/oyu_up.png);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+
+main #usaginoyuIntroduction .usaginoyuOyusec .usaginoyuOyusetsumei{
+    max-width: 1024px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+/* ここから下メインサウナ露天風呂紹介CSS */
+
+main #usaginoyuIntroduction .usaginoyuSauna{
+    background-color: var(--subColor);
+    padding: 5rem;
+    margin-bottom: 1rem;
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna h4{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--backGroundColor);
+    display: block;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* ここから下メインサウナ紹介文CSS */
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction01{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction01 .usaginoyuSaunaimage{
+    background-image: url(../../image/sauna.jpg);
+    flex-basis: 50%;
+    aspect-ratio: 3/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 h3{
+    font-family: "Zen Antique Soft", serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: var(--backGroundColor);
+    border-bottom:  1px solid var(--backGroundColor);
+    padding-bottom: 1.5rem;
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction01 .usaginoyuSaunatext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    gap: 2.5rem;
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna 
+.usaginoyuSauna01 .usaginoyuIntroduction01 
+.usaginoyuSaunatext .usaginoyuSauna02{
+    color: var(--backGroundColor);
+}
+
+/* ここから下メイン露天紹介文CSS */
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction02{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna03{
+    color: var(--backGroundColor);
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction02 .usaginoyuSaunatext02{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    gap: 2.5rem;
+}
+
+main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction02 .usaginoyuSaunaimage01{
+    background-image: url(../../image/roten.jpg);
+    flex-basis: 50%;
+    aspect-ratio: 3/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+main #usaginoyuIntroduction .usaginoyuSauna 
+.usaginoyuSauna01 .usaginoyuIntroduction01 
+.usaginoyuSaunatext .usaginoyuSauna03{
+    color: var(--backGroundColor);
+}
+
+
+/* --------------------------------------ここから下メイン3本ロゴスクロールアニメーションCSS */
+main .scroll-logo .bgScr {
+    height: 95px;
+    background-size: contain;
+    animation: loop 30s infinite linear;
+}
+
+main .scroll-logo .scr01 {
+    background-image: url(../../image/scrolllogo_top.png);
+    animation-direction: reverse;
+}
+
+main .scroll-logo .scr02 {
+    background-image: url(../../image/scrolllogo_middle.png);
+}
+
+main .scroll-logo .scr03 {
+    background-image: url(../../image/scrolllogo_bottom.png);
+    animation-direction: reverse;
+}
+
+@keyframes loop {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 2200px;
+    }
+}
+/* --------------------------------------メイン3本ロゴスクロールアニメーションCSS ここまで*/
+
+
+/* ここから下スマホ版メディアクエリ */
+
+@media screen and (max-width: 768px){
+
+    main #usaginoyuTop .sec01Time{
+        margin: 0 0 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main #usaginoyuTop .sec01Time dl{
+        display: flex;
+        flex-direction: column;
+        gap:0.25rem;
+    }
+
+    main #usaginoyuTop .sec01Time dl .sec01Time1{
+        display: flex;
+        gap: 2rem;
+    }
+
+    main #usaginoyuTop .sec01mainimage h2{
+        writing-mode: vertical-rl;
+        font-family: "Zen Antique Soft", serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: left;
+        letter-spacing: 1rem;
+    }
+    
+    main #usaginoyuTop .sec01mainimage h2 span{
+        display: inline;
+        /* text-align: center; */
+    }
+    
+
+    /* メイン写真上営業時間メディアクエリ締め */
+
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign{
+        text-align: center;
+    }
+    
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign img{
+        width: 400px;
+        position: static;
+    }
+    
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign01{
+        text-align: center;
+    }
+
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuDesign01 img{
+        width: 400px;
+        position: static;
+    }
+
+    /* オレンジお湯メディアクエリ締め */
+
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuPlan02 h3{
+        font-size: 2rem;
+        margin: 2rem;
+        text-align: center;
+    }
+    
+    main #usaginoyuPlan .usaginoyuPlan01 .usaginoyuPlan02 p{
+        margin: 1.5rem
+    }
+
+
+    /* ここから下画像自動スクロール */
+
+
+    main #usaginoyuPlan .scroll-infinity__wrap {
+        display: none;
+    }
+
+    main #usaginoyuPlan .scroll-infinity__wrap2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #usaginoyuPlan .scroll-infinity__list {
+        width: max-content; /* 内容に応じて伸びる */
+    }
+
+    main #usaginoyuPlan .scroll-infinity__list--left {
+        animation: infinity-scroll-left 15s linear infinite;
+    }
+
+    main #usaginoyuPlan .scroll-infinity__list--right {
+        animation: infinity-scroll-right 15s linear infinite;
+    }
+
+    main #usaginoyuPlan ul li {
+        width: calc(100vw / 3); /* スマホでは3分割 */
+        height: 200px; /* 高さを少し調整 */
+    }
+
+    /* うさぎの湯とは？説明メディアクエリ締め */
+
+    main #usaginoyuIntroduction .usaginoyuOyusec .usaginoyuOyusetsumei{
+        margin: 3rem auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* うさぎの湯説明メディアクエリ締め */
+
+    main #usaginoyuIntroduction .usaginoyuSauna{
+        padding: 2rem;
+    }
+
+    main #usaginoyuIntroduction .usaginoyuSauna h4{
+        font-size: 2.25rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    main #usaginoyuIntroduction .usaginoyuSauna 
+    .usaginoyuSauna01 .usaginoyuIntroduction01 
+    .usaginoyuSaunatext h3{
+    font-size: 2rem;
+    /* text-align: right; */
+    }
+
+    main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction01{
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        /* gap: 1rem; */
+    }
+    
+    main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction02{
+        display: flex;
+        flex-direction: column-reverse;
+        /* align-items: flex-end; */
+        gap: 1rem;
+        margin-top: 2rem;
+    
+    }
+
+    main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 h3{
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+
+    main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction01 .usaginoyuSaunatext{
+        align-items: flex-end;
+
+    }
+
+    main #usaginoyuIntroduction .usaginoyuSauna .usaginoyuSauna01 .usaginoyuIntroduction02 .usaginoyuSaunatext02 h3{
+        font-size: 2rem;
+    }
+
+
+
+/* サウナ・露天説明メディアクエリ締め */
+
+main .scroll-logo .bgScr {
+    height: 60px;
+    background-size: contain;
+    animation: loop 30s infinite linear;
+}
+main .scroll-logo .scr01 {
+    background-image: url(../../image/scrolllogo_top.png);
+    animation-direction: reverse;
+}
+main .scroll-logo .scr03 {
+    background-image: url(../../image/scrolllogo_bottom.png);
+    animation-direction: reverse;
+}
+}

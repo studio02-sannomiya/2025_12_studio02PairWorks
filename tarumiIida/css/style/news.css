@@ -1,0 +1,52 @@
+
+
+main #news {
+    max-width: 1000px;
+    margin: 0 auto;
+  
+}
+main #news h2 {
+    max-width: 300px;
+    height: 70px;
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size4);
+    color: var(--text-color5);
+    border: 5px solid var(--text-color5);
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    margin: 3rem auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+main #news ol {
+    margin: 0 auto;
+    background-color: var(--text-color2);
+    border: 10px solid var(--text-color3);
+    width: 1000px;
+    overflow: scroll hidden;
+    padding: var(--pading1);
+}
+
+main #news ol li {
+    display: flex;
+    border-bottom: 1px solid var(--text-color1);
+    padding: var(--pading1);
+    width: 1500px;
+}
+
+main #news ol li time {
+    margin-right: var(--margin1);
+}
+/***************** メディアクエリ 650px ******************/
+
+@media screen and (max-width: 650px) {
+    main #news h2 {
+        max-width: 250px;
+        height: 60px;
+        font-size: var(--text-size2);
+        border: 3px solid var(--text-color5);
+    }
+}

@@ -1,0 +1,143 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    background-color: #f2ede7;
+}
+
+.spHeader {
+    background-image: none;
+    position: absolute;
+    font-size: 20px;
+}
+
+.spHeader .headerNav2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(58, 179, 78, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000000;
+}
+
+.spHeader .headerNav2 ul {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.spHeader .headerNav2 ul li {
+    padding: 32px 65px;
+    align-self: flex-start;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.spHeader .headerNav2 ul li:hover {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spHeader .headerNav2 .logoSp {
+    width: 250px;
+    min-width: 250px;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .spHeader .headerNav2 {
+        display: none;
+    }
+
+    #drawerButton {
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    header .drawer ul {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(35, 123, 76, 0.9);
+        transition: top 0.3s ease;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        color: white;
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    header .headerNav {
+        display: none;
+    }
+
+    header .Reserve01 {
+        max-width: 40%;
+    }
+
+    header .drawer ul .drawerNav02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .drawerNav03 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .drawerNav01 li {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .spHeader .headerNav2 {
+        display: none;
+    }
+
+    #drawerButton {
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,57 @@
+#concept {
+    max-width: 1110px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding: 0 1rem;
+}
+
+#concept .conceptbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#concept .conceptbox .concept1 {
+    max-width: 745px;
+}
+
+#concept .conceptbox .concept2 {
+    margin: 0 1rem;
+}
+#concept .conceptbox .concept2 h1 {
+    color: var(--textmaincolor);
+    font-size: var(--textmainsize);
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+#concept .conceptbox .concept2 p {
+    color: var(--textcolor);
+    font-size: var(--textsize);
+}
+
+/* h1たちのcssアニメーションはこちら */
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.6s;
+}
+
+@media (max-width: 393px) {
+    #info .infobox {
+        flex-wrap: wrap-reverse;
+    }
+    /* #info .infobox .map {
+        padding: 0 1rem 0 0;
+    } */
+}
+
+@media (max-width: 900px) {
+    #concept .conceptbox .concept1 {
+        display: none;
+    }
+}

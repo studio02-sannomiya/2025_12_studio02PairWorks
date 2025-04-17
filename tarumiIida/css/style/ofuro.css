@@ -1,0 +1,298 @@
+main #ofuro {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main #ofuro .yuge {
+    display: flex;
+}
+
+main #ofuro img {
+    border-radius: 20%;
+    width: 615px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#iwa,
+#take {
+    margin-bottom: 4rem;
+}
+
+main #ofuro h2 {
+    max-width: 400px;
+    height: 70px;
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size4);
+    color: var(--text-color5);
+    border: 5px solid var(--text-color5);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin: 3rem auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+/***************** 湯気の背景 ******************/
+
+main #ofuro #oyu-shousai1,
+#oyu-shousai2,
+#oyu-shousai3 {
+    width: 650px;
+    height: 420px;
+    background-image: url(../../images/ofuroshousai.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/*****************  湯気の中の文字  ******************/
+
+main #ofuro h4 {
+    width: 300px;
+    font-family: var(--fontfamily2);
+    color: var(--text-color5);
+    font-size: var(--text-size3);
+    margin: 0 auto 0.5rem;
+    background-color: rgba(139, 174, 170, 0.3);
+    text-align: center;
+}
+
+
+main #ofuro .yuge p {
+    font-family: var(--fontfamily4);
+    color: var(--text-color5);
+    font-size: var(--text-size1);
+    width: 400px;
+    line-height: 1.2;
+}
+
+/***************** ボタン ******************/
+
+main #ofuro .readmore{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main #ofuro .readmore .button {
+    width: 250px;
+    height: 70px;
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size3);
+    background-color: var(--text-color3);
+    border: 5px solid var(--text-color2);
+    border-radius: 16px;
+    color: var(--text-color2);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/***************** ボタンホバー ******************/
+
+main #ofuro .readmore .button:hover {
+    transform: scale(1.1);
+    background-color: var(--text-color2);
+    border: 5px solid var(--text-color3);
+    border-radius: 16px;
+    color:var(--text-color3); 
+}
+
+/***************** お風呂メニュー ******************/
+main #menu {
+    max-width: 1000px;
+    background-color: rgba(188, 124, 78, 0.6);
+    border-radius: 16px;
+    padding: 2rem 1rem;
+    margin: 3rem auto 2rem;
+}
+
+main #menu #menu-wrap h3 {
+    width: 300px;
+    height: 50px;
+    font-family: var(--fontfamily2);
+    font-size: var(--text-size3);
+    color: var(--text-color2);
+    background-color: #bc7c4e;
+    border-radius: 16px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: var(--margin1);
+}
+
+main #menu #menu-wrap .menu-yoko {
+    display: flex;
+    display: flex;
+    justify-content: space-between; /* 均等配置 */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* 均等配置 */
+    align-items: center;
+    width: 100%;
+}
+
+main #menu .menu-naiyou {
+    width: 50%;
+    display: flex;
+    margin-bottom: var(--margin1);
+    align-items: center;
+    
+}
+
+main #menu .menu-naiyou-sauna {
+    display: flex;
+    margin-bottom: var(--margin1);
+    align-items: center;
+}
+
+main #menu #menu-wrap .ofuromenu {
+    width: 180px;
+    font-family: var(--fontfamily2);
+    color: var(--text-color2);
+    font-size: var(--text-size3);
+}
+
+main #menu #menu-wrap .ofuromenu-jet {
+    width: 270px;
+    font-family: var(--fontfamily2);
+    color: var(--text-color2);
+    font-size: var(--text-size3);
+}
+
+main #menu #menu-wrap p {
+    width: calc(100%-200px);
+    font-family: var(--fontfamily4);
+    color: var(--text-color2);
+    font-size: var(--text-siz1);
+}
+
+main #menu #menu-wrap .sauna-p {
+    width: calc(100%-270px);
+    font-family: var(--fontfamily4);
+    color: var(--text-color2);
+    font-size: var(--text-siz1);
+    text-align: left;
+}
+
+
+/* アニメーション用のクラス */
+#oyu-shousai1.fade-up,
+#oyu-shousai2.fade-up,
+#oyu-shousai3.fade-up {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+#oyu-shousai1.fade-up.visible,
+#oyu-shousai2.fade-up.visible,
+#oyu-shousai3.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 画像部分は元から可視状態にしておく */
+#iwa, #take, #danro {
+    opacity: 1;
+    transform: none;
+}
+
+@media screen and (max-width: 1000px) {
+    main #ofuro #oyu-shousai1,
+    main #ofuro #oyu-shousai2,
+    #oyu-shousai3 {
+        width: 550px;
+        height: 400px;
+        display: flex;
+    }
+
+    /*****************  湯気の中の文字  ******************/
+
+    main #ofuro h4 {
+        width: 300px;
+        font-size: var(--text-size2);
+        margin: 0 auto 0.5rem;
+    }
+
+    main #ofuro .yuge p {
+        font-size: var(--text-size1);
+        width: 400px;
+        line-height: 1.2;
+    }
+
+    main #ofuro .yuge {
+        display: block;
+    }
+
+    main #ofuro {
+        max-width: 90%;
+    }
+
+    main #menu {
+        max-width: 90%;
+    }
+
+    main #menu #menu-wrap .menu-yoko {
+        display: block;
+    }
+    main #menu .menu-naiyou {
+        width: 100%;
+    }
+
+    main #menu .menu-naiyou-sauna {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+/***************** メディアクエリ 650px ******************/
+
+@media screen and (max-width: 650px) {
+    main #ofuro #oyu-shousai1 {
+        width: 300px;
+        height: 500px;
+        display: flex;
+    }
+
+    main #ofuro #oyu-shousai2,
+    #oyu-shousai3 {
+        width: 400px;
+        height: 300px;
+        display: flex;
+    }
+
+    main #menu .menu-naiyou {
+        flex-direction: column;
+    }
+
+    main #menu #menu-wrap .ofuromenu,
+    main #menu .menu-naiyou p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main #menu #menu-wrap h3 {
+        width: 200px;
+        font-size: var(--text-size2);
+    }
+
+    main #menu #menu-wrap .ofuromenu,
+    main #menu #menu-wrap .ofuromenu-jet {
+        font-size: var(--text-color2);
+    }
+
+    main #menu #menu-wrap p,
+    main #menu #menu-wrap .sauna-p {
+        font-size: var(--text-siz1);
+    }
+}

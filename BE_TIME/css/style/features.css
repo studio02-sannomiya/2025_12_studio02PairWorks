@@ -1,0 +1,201 @@
+#features {
+    margin-top: 130px;
+    margin-bottom: 65px;
+    margin: 0 auto;
+}
+
+.featuresinner {
+    display: grid;
+    /* grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw; */
+    grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+
+    margin: 0 auto;
+    max-width: 1110px;
+    height: 1400px;
+}
+/* ---------------- */
+#features h1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: var(--textmaincolor);
+    font-size: var(--textmainsize);
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* --------- */
+.featuresinner .pic1 {
+    grid-row-start: 3;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 8; /* ← 2マス分 */
+    display: block; /* ← これを追加 */
+    width: 280px;
+}
+
+.featuresinner .featuresboxsec1 {
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
+/* ----------- */
+.featuresinner .pic2 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 11;
+    grid-column-end: 18; /* ← 2マス分 */
+    display: block; /* ← これを追加 */
+    width: 280px;
+}
+
+.featuresinner .featuresboxsec2 {
+    grid-row-start: -16;
+    grid-row-end: -13;
+    grid-column-start: 13;
+    grid-column-end: 19;
+}
+
+/* ------------ */
+
+.featuresinner .pic3 {
+    grid-row-start: 12;
+    grid-row-end: 17;
+    grid-column-start: 3;
+    grid-column-end: 18; /* ← 2マス分 */
+    display: block; /* ← これを追加 */
+    width: 280px;
+}
+
+.featuresinner .featuresboxsec3 {
+    grid-row-start: 17;
+    grid-row-end: 20;
+    grid-column-start: -18;
+    grid-column-end: -12;
+}
+
+/* ---------- */
+
+.featuresinner .pic4 {
+    grid-row-start: 10;
+    grid-row-end: 16;
+    grid-column-start: 12;
+    grid-column-end: 18; /* ← 2マス分 */
+    display: block; /* ← これを追加 */
+    width: 280px;
+}
+
+.featuresinner .featuresboxsec4 {
+    grid-row-start: 15;
+    grid-row-end: 18;
+    grid-column-start: -9;
+    grid-column-end: -3;
+}
+
+/* ---------- */
+.featuresboxsec1,
+.featuresboxsec2,
+.featuresboxsec3,
+.featuresboxsec4 {
+    max-width: 360px;
+    /* height: auto; */
+    border: 1px solid var(--accentcolor);
+    background-color: var(--textcolor);
+    color: var(--textmaincolor);
+    padding: 1.5rem;
+}
+
+.featuresboxsec1 h2,
+.featuresboxsec2 h2,
+.featuresboxsec3 h2,
+.featuresboxsec4 h2 {
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.featuresboxsec1 p,
+.featuresboxsec2 p,
+.featuresboxsec3 p,
+.featuresboxsec4 p {
+    margin: 0; /* Reset any default margins */
+    padding: 0 0 0.5rem 0; /* Add consistent padding */
+    line-height: 1.5; /* Improve readability with consistent line height */
+}
+
+/* .featuresinner .content1 {
+    display: flex;
+    
+} */
+
+@media (max-width: 1023px) {
+    .featuresinner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+        padding: 0 1rem;
+        position: relative; /* 追加 */
+    }
+
+    #features h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .featuresinner .pic1,
+    .featuresinner .pic2,
+    .featuresinner .pic3,
+    .featuresinner .pic4 {
+        width: 100%;
+        max-width: 280px;
+        grid-column: unset;
+        grid-row: unset;
+        order: 1;
+        position: relative; /* 追加 */
+        z-index: 1; /* 追加 */
+    }
+
+    .featuresinner .featuresboxsec1,
+    .featuresinner .featuresboxsec2,
+    .featuresinner .featuresboxsec3,
+    .featuresinner .featuresboxsec4 {
+        width: 100%;
+        max-width: 360px;
+        grid-column: unset;
+        grid-row: unset;
+        order: 2;
+        margin-bottom: 2rem;
+        position: relative; /* 追加 */
+        z-index: 2; /* 追加 */
+        margin-top: -100px; /* 画像と重ねるための調整 */
+    }
+
+    /* Specific ordering to match original layout */
+    .featuresinner .pic1 {
+        order: 1;
+    }
+    .featuresinner .featuresboxsec1 {
+        order: 2;
+    }
+    .featuresinner .pic2 {
+        order: 3;
+    }
+    .featuresinner .featuresboxsec2 {
+        order: 4;
+    }
+    .featuresinner .pic3 {
+        order: 5;
+    }
+    .featuresinner .featuresboxsec3 {
+        order: 6;
+    }
+    .featuresinner .pic4 {
+        order: 7;
+    }
+    .featuresinner .featuresboxsec4 {
+        order: 8;
+    }
+}

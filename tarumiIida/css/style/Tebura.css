@@ -1,0 +1,112 @@
+/* main .minasanHaikeiMizuiro {
+    background-color: rgba(139, 174, 170, 0.6);
+} */
+/* main .contentsWrap { */
+    /* background-color:rgba(139, 174, 170, 0.6); */
+    /* padding-bottom: 48px; */
+/* } */
+
+main .Tebura {
+    border: 1px solid black;
+    max-width: 1000px;
+    height: auto;
+    background-color: #68736f;
+    margin: 0 auto;
+}
+main .Tebura h2 {
+    font-size: var(--text-size3);
+    color: var(--text-color2);
+    font-family: var(--fontfamily2);
+    margin: 16px 0 16px 0;
+    text-align: center;
+}
+
+main .Tebura .shouhin {
+    max-width: 936px;
+    background-color: #ffffff;
+    margin: 16px 32px 16px 32px;
+}
+main .Tebura h4 {
+    max-width: 200px;
+    margin: 16px;
+    font-family: var(--fontfamily4);
+    font-size: var(--text-size3);
+}
+
+main .Tebura .shouhin .shouhin02 {
+    display: flex;
+}
+
+main .Tebura .shouhin ul {
+    margin: 16px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+main .Tebura .shouhin ul li {
+    font-family: var(--fontfamily4);
+    font-size: 24px;   
+}
+
+/* main .Tebura .shouhin ul li:nth-child(1){
+    margin-right: 32px;
+}
+main .Tebura .shouhin ul li:nth-child(2){
+    margin-left: 32px;
+} */
+
+main .Tebura .shouhin .zyoubi {
+    font-size: 16px;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main .Tebura .ryoukin {
+    max-width: 936px;
+    background-color: #ffffff;
+    margin: 16px 32px 16px 32px;
+    font-family: var(--fontfamily4);
+    font-size: 24px;
+}
+
+main .Tebura .ryoukin ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+/***************** メディアクエリ 1000px ******************/
+@media screen and (max-width: 1000px) {
+    main .Tebura {
+        max-width: 90%;
+    }
+}
+
+/***************** メディアクエリ 500px ******************/
+@media screen and (max-width: 500px) {
+    main .Tebura h2,
+    main .Tebura h4 {
+        font-size: var(--text-size2);
+    }
+
+    main .Tebura .shouhin ul li,
+    main .Tebura .ryoukin ul li {
+        font-size: var(--text-size1);
+    }
+
+    main .Tebura .shouhin ul {
+        font-size: var(--text-size1);
+        display: flex;
+        flex-direction: column;
+    }
+    main .Tebura .shouhin .zyoubi small {
+        display: flex;
+        flex-direction: column;
+    }
+}

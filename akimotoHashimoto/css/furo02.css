@@ -1,0 +1,370 @@
+/*   main00 はFVなのでwidth 100％　all01がセクションデザイン */
+
+.main00 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/img04.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; /* 下寄せ */
+    position: relative; /* 絶対配置の基準にする */
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.main00texst {
+    width: 60%;
+    background: rgba(246, 246, 246, 0.5);
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+}
+.main00texst h2 {
+    font-size: 22.4px;
+    font-weight: bold;
+}
+.main00texst p {
+    font-size: 20.8px;
+}
+
+/*   ***********  all01 *************** */
+.all01 {
+    background-color: #257180;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 12rem;
+    padding-bottom: 16rem;
+}
+
+main {
+    background-color: #f2e5bf;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*  *****************   main01 デザイン ****************** */
+/* .main01{
+    display: flex;
+    border: 3px solid #257180;
+
+
+}
+
+main .text01{
+    width: 1.16%;
+}
+
+main .img01{
+    border: 3px solid #257180;
+    width: 53%;
+    max-width: 460px;
+    height: auto;
+    background: url(/img/img05.webp) no-repeat center center / cover;
+}
+
+main .text02{
+    border: 3px solid #257180;
+    width: 34%;
+    align-self: center;
+}
+ */
+
+/*    ************  こぴー　　************ */
+h3 {
+    background-color: #fd8b51;
+    width: 48px;
+    height: 236px;
+    writing-mode: vertical-rl; /* 縦書き（右から左） */
+    font-size: 20.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************* 主浴槽 ****************************/
+.main01 {
+    display: flex;
+}
+
+.img01 {
+    background-image: url(../img/img05.webp);
+    background-size: cover;
+    background-position: 20% center;
+    height: 516px;
+    width: 430px;
+}
+.main01 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+/************************* 高温風呂 *************************/
+.main02 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img02 {
+    background-image: url(../img/img18.jpg);
+    background-size: cover;
+    background-position: 8% center;
+    height: 516px;
+    width: 430px;
+}
+
+.main02 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-right: 2rem;
+}
+
+/************************* 露天風呂 ************************/
+.main03 {
+    display: flex;
+}
+
+.img03 {
+    background-image: url(../img/img04.jpg);
+    background-size: cover;
+    background-position: 49% center;
+    height: 516px;
+    width: 430px;
+}
+.main03 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+
+/************************** 水風呂 ************************/
+
+.main04 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img04 {
+    background-image: url(../img/img19.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 516px;
+    width: 430px;
+}
+
+.main04 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-right: 2rem;
+}
+
+/********************** ロウリュウサウナ ************************/
+.main05 {
+    display: flex;
+}
+
+.img05 {
+    background-image: url(../img/img17.webp);
+    background-size: cover;
+    background-position: center;
+    height: 516px;
+    width: 430px;
+}
+.main05 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+
+/***************************** 電気風呂 ***********************/
+
+.main06 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img06 {
+    background-image: url(../img/img20.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 516px;
+    width: 430px;
+}
+
+.main06 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-right: 2rem;
+}
+
+/*************************** ジェットバス ***********************/
+.main07 {
+    display: flex;
+}
+
+.img07 {
+    background-image: url(../img/img16.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 516px;
+    width: 430px;
+}
+.main07 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+/*************************** 薬湯 *************************/
+.main08 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img08 {
+    background-image: url(../img/img01.jpg);
+    background-size: cover;
+    background-position: 20% center;
+    height: 516px;
+    width: 430px;
+}
+
+.main08 p {
+    width: 298px;
+    height: 153px;
+    margin-top: 12rem;
+    margin-right: 2rem;
+}
+/************************* 波*************************/
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.wave-container svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    animation: wave 10s linear infinite; /* アニメーション設定 */
+}
+
+/************************** スマホ版 *****************************/
+@media screen and (max-width: 393px) {
+    /*********** やわらかいお湯と、心地よい熱。 ************/
+    .main00 {
+        background-position: 30% center;
+        padding: 0;
+    }
+    .main00texst {
+        width: 350px;
+        height: 204px;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 20px;
+        /* border: solid red; */
+    }
+
+    .main00texst p {
+        line-height: 1.3; /* 行間を調整 */
+        max-width: 315px;
+        height: 140px;
+    }
+    /***************** お風呂 *********************/
+    main {
+        background-color: #f2e5bf;
+        max-width: 300px;
+        padding-top: 0;
+    }
+    .img01,
+    .img02,
+    .img03,
+    .img04,
+    .img05,
+    .img06,
+    .img07,
+    .img08 {
+        width: 300px;
+        height: 358px;
+    }
+
+    .main01,
+    .main02,
+    .main03,
+    .main04,
+    .main05,
+    .main06,
+    .main07,
+    .main08 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main01 p,
+    .main02 p,
+    .main03 p,
+    .main04 p,
+    .main05 p,
+    .main06 p,
+    .main07 p,
+    .main08 p {
+        width: 230px;
+        height: 153px;
+
+        margin: 5rem 2rem;
+    }
+    /*********** 右に配置 *********/
+    .main01,
+    .main03,
+    .main05,
+    .main07 {
+        position: relative;
+    }
+    .main01 h3,
+    .main03 h3,
+    .main05 h3,
+    .main07 h3 {
+        position: absolute;
+        left: 0; /* 左端にピッタリ */
+        top: 0;
+        /* width: 40px;
+        height: 180px;
+        font-size: 20px; */
+    }
+
+    /*********** 左に配置 *********/
+    .main02,
+    .main04,
+    .main06,
+    .main08 {
+        position: relative;
+    }
+    .main02 h3,
+    .main04 h3,
+    .main06 h3,
+    .main08 h3 {
+        position: absolute;
+        right: 0; /* 右端にピッタリ */
+        top: 10;
+        /* width: 40px;
+        height: 180px;
+        font-size: 20px; */
+    }
+    /******************* 波***************** */
+    @keyframes wave {
+        0% {
+            transform: translateX(0); /* 初期位置 */
+        }
+        100% {
+            transform: translateX(-1200px); /* 波形を左に移動 */
+        }
+    }
+}

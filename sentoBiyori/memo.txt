@@ -1,0 +1,57 @@
+/* スクロールコンテナのスタイル */
+.scrollContainer {
+    width: 100%;  /* 横幅いっぱい */
+    overflow: hidden;  /* コンテナを超える部分を隠す */
+    position: relative;  /* スクロールのための基準 */
+}
+
+/* 画像を横並びにする */
+.scrollImages {
+    display: flex;  /* 横並びに配置 */
+    animation: scroll 10s linear infinite;  /* 10秒間でスクロール、無限ループ */
+}
+
+/* 画像のスタイル */
+.scrollImages img {
+    width: 100%;  /* 画像の幅を100%に設定（レスポンシブ対応） */
+    height: auto;  /* 高さは自動調整 */
+}
+
+/* スクロールアニメーションの定義 */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);  /* 画像を左に移動 */
+    }
+    100% {
+        transform: translateX(-200%);  /* 2枚目の画像が表示されるように */
+    }
+}
+
+
+マップ
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;  /* 最大幅を600pxに設定 */
+    height: 450px;  /* 高さを450pxに設定 */
+}
