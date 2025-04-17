@@ -1,0 +1,9 @@
+#siteLink dl {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#siteLink h2 {
+    background-color: #e6f0f5;
+}
