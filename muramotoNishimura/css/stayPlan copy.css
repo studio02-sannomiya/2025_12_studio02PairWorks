@@ -1,0 +1,675 @@
+body {
+    color: #ffffff;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+}
+
+/* body p {
+    font-size: 50px;
+} */
+body img {
+    max-width: 100%;
+    height: auto;
+}
+
+body .stayPlanContainer_01 {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #b3d6f1;
+}
+
+/* ************header********************************* */
+
+body .stayPlanContainer_01 header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+body .stayPlanContainer_01 header h1 {
+    font-size: 230px;
+    text-align: center;
+    padding: 50px 50px;
+    /* border: 1px solid black; */
+}
+
+/* body .stayPlanContainer_01 header .header_slider { */
+/* width: 1440px; */
+/* width: 100%; */
+/* height: 960px; */
+
+/* 一時停止スライダーのコード */
+/* display: flex; */
+
+/* ↑画像4枚分の幅 */
+/* overflow: hidden; */
+/* position: relative; */
+
+/* fadeInOutのコード */
+/* position: relative; */
+/* overflow: hidden; */
+/* } */
+
+/* .header_slider_track { */
+/* 一時停止スライダーのコード */
+/* display: flex; */
+/* width: 100%;  */
+/*↑ 4枚の画像が横並びになるように */
+/* flex-shrink: 0; */
+
+/* fadeInOutのコード */
+/* width: 100%; */
+/* position: absolute; */
+/* opacity: 0; */
+/* transition: opacity 1s ease-in-out; */
+/* animation: fadeInOut 16s infinite; */
+/* } */
+
+/* 一時停止スライダーのコード */
+/* .slide:nth-child(1){ */
+/* animation-delay: 0s; */
+/* } */
+/* .slide:nth-child(2){ */
+/* animation-delay: 4s; */
+/* } */
+/* .slide:nth-child(3){ */
+/* animation-delay: 8s; */
+/* } */
+/* .slide:nth-child(4){ */
+/* animation-delay: 12s; */
+/* } */
+
+/* body .header_slider_track { */
+/* display: flex; */
+/* width: calc(100% * 8); */
+/* animation: slideWithPause 40s linear infinite; */
+/* } */
+
+/* body header .header_slide { */
+/* width: 1440px; */
+/* height: auto; */
+/* overflow: hidden; */
+
+/* flex-shrink: 0; */
+/* } */
+
+/* .swiper { */
+/* width: 1440px; */
+/* height: 960px; */
+/* } */
+
+.swiper {
+    width: 1440px;
+    height: 960px;
+    /* position: relative; */
+    /* z-index: 2; */
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+    border-radius: 80px;
+}
+
+.swiper-slide .img03{
+    object-position: center bottom !important;
+    /* transform: scale(0.8); 80%のサイズに縮小 */
+    /* transform-origin: center center; 中央を基準に縮小 */
+}
+
+/* .stayPlanContainer_01 {
+    position: relative;
+    z-index: 1; 背景やメイン要素が前に来るように
+} */
+
+/* body .stayPlanContainer_01 header img { */
+    /* width: 100%; */
+    /* ↑親要素に合わせる */
+    /* flex-shrink: 0; */
+    /* height: 100%; */
+    /* ↑高さを統一 */
+    /* overflow: hidden; */
+    /* object-fit: cover; */
+    /* 画像をトリミングしつつ均等に表示 */
+    /* border-radius: 80px; */
+    /* transform: scale(0.7); */
+    /* transform-origin: center center; */
+    /* aspect-ratio: 16/10; */
+/* } */
+
+/* fadeInOutのコード */
+/* @keyframes fadeInOut{ */
+/* 0%, 20%{ */
+/* opacity: 1; */
+/* } */
+/* 25%, 95%{ */
+/* opacity: 0; */
+/* } */
+/* 100%{ */
+/* opacity: 0; */
+/* } */
+/* } */
+
+/* スライダーのコード */
+/* @keyframes slide { */
+/* 0% { transform: translateX(0); } */
+/* 100% { transform: translateX(-100%); } */
+/* } */
+
+/* 一時停止スライダーのコード */
+/* @keyframes slideWithPause { */
+/* 0%, */
+/* 10% { */
+/* transform: translateX(0); */
+/* } */
+/* 15%, */
+/* 22.5% { */
+/* transform: translateX(1440px); */
+/* } */
+/* 27.5%, */
+/* 35% { */
+/* transform: translateX(-2880%); */
+/* } */
+/* 40%, */
+/* 47.5% { */
+/* transform: translateX(-4320px); */
+/* } */
+/* 52.5%, */
+/* 60% { */
+/* transform: translateX(-5760px); 5枚目表示 */
+/* } */
+/* 65%, */
+/* 72.5% { */
+/* transform: translateX(-7200px); 6枚目表示 */
+/* } */
+/* 77.5%, */
+/* 85% { */
+/* transform: translateX(-8640px); 7枚目表示 */
+/* } */
+/* 90%, */
+/* 97.5% { */
+/* transform: translateX(-10080px); 8枚目表示 */
+/* } */
+/* 100% { */
+/* transform: translateX(0); 最初に戻る */
+/* } */
+/* } */
+/* *************sec01_stayPlan****************************** */
+.stayPlanContainer_02 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.stayPlanContainer_02 h2 {
+    width: 700px;
+    font-size: 200px;
+    /* text-align: center; */
+    margin-bottom: -220px;
+    /* border: 1px solid black; */
+    position: relative;
+    z-index: 1000px;
+    line-height: 1;
+}
+
+.glampingArea_introduce,
+.campArea_introduce,
+.bungalowArea_introduce {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    /* border: 1px solid pink; */
+}
+
+.glumping_intro_imgBox,
+.camp_intro_imgBox,
+.bungalow_intro_imgBox {
+    width: 600px;
+    height: 600px;
+    /* border: 5px solid black; */
+    /* border-radius: 80px; */
+}
+
+.glumping_intro_img,
+.camp_intro_img,
+.bungalow_intro_img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* border: 1px solid red; */
+    border-radius: 80px;
+}
+
+.stayPlanContainer_02 h2.camp_Area {
+    /* display: block;****************************************質問 */
+    /* border: 1px solid black; */
+    margin-left: auto;
+    /* margin-right: 0; */
+    text-align: right;
+}
+
+.campArea_introduce .normal:nth-child(1) {
+    order: 2;
+    position: relative;
+    /* right: px; */
+}
+/* .glampingArea_introduce,
+.campArea_introduce,
+.bungalowArea_introduce:nth-child(1) {
+    padding: auto 0;
+} */
+.stayPlanContainer_02 p {
+    font-size: 36px;
+}
+
+.sec01_stayPlan .normal {
+    width: 400px;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: 300px 0 0 100px;
+}
+/* .sec01_stayPlan .imgBox {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-fit: contain;
+}
+
+.sec01_stayPlan .imgBox img {
+    border-radius: 80px;
+} */
+
+.handLetter_for_glumpingBox {
+    position: relative;
+    left: 1000px;
+    bottom: 900px;
+}
+.handLetter_for_campBox {
+    position: relative;
+    bottom: 900px;
+}
+
+.handLetter_for_bungalowBox {
+    position: relative;
+    left: 1000px;
+    bottom: 900px;
+}
+
+.canoe_lady_img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 100px;
+    rotate: 30deg;
+}
+
+.canoe_boy_img {
+    /* display: block; */
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: 300px;
+    rotate: -20deg;
+    
+}
+
+.vertical_text {
+    writing-mode: vertical-rl; /* 右から左へ縦書き */
+    height: auto; /* 必要に応じて調整 */
+    margin: 0 auto; /* 中央揃えにする場合 */
+  }
+  
+.yomogi {
+    font-family: 'Yomogi', cursive;
+    font-size: 40px;
+    color: black;
+    background-color: rgba(255, 255, 224, 0.5);
+    border-radius: 10px;
+  }
+
+.tegaki_tategaki_glumping{
+    font-size: 60px;
+    position: relative;
+    left: 500px;
+    bottom: 700px;
+    /* rotate: -20deg; */
+}
+
+.tegaki_tategaki_camp{
+    position: relative;
+    right: 500px;
+    bottom: 700px;
+    /* background-color: lightyellow; */
+    /* color: black; */
+}
+
+.tegaki_tategaki_bungalow{
+    position: relative;
+    left: 500px;
+    bottom: 700px;
+}
+
+
+
+/* ****************sec02_sevralMenu*********************** */
+
+/* Special plan部分のCSS修正 */
+.stayPlanContainer_03 .sec02_sevralMenu {
+    width: 1440px;
+    /* border: 1px solid black; */
+    margin-bottom: 150px;
+}
+
+.sec02_sevralMenu h3 {
+    width: 1220px;
+    font-size: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+/* スワイパーコンテナ */
+.stayPlan_slider {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* スライドの動き等速 */
+.stayPlan_slider_track.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+/* 個別のスライド */
+.stayPlan_slide.swiper-slide {
+    width: 500px;
+    height: 800px;
+    background-color: #d9d9d9;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+/* 画像コンテナ */
+.stayPlan_slide .specialPlan_img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 80px;
+    margin: 40px auto;
+}
+
+/* 画像のサイズ調整 */
+.stayPlan_slide .specialPlan_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+}
+
+/* テキスト部分 */
+.stayPlan_slider .specialPlan_letter {
+    text-align: center;
+    font-size: 38px;
+    padding: 16px 16px 150px 16px;
+    /* margin-top: 100px; */
+    /* border: 1px solid black; */
+}
+
+/* *****************sec03_pliceList****************************** */
+.stayPlanContainer_04 {
+    width: 1220px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.sec03_pricelist {
+    padding-bottom: 200px;
+}
+
+.stayPlanContainer_04 h2.price {
+    font-size: 150px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sec03_pricelist table {
+    width: 1200px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    font-size: 25px;
+}
+
+.sec03_pricelist th,
+td {
+    color: black;
+    border: 1px solid black;
+    padding: 16px 16px;
+}
+
+.sec03_pricelist th {
+    text-align: center;
+}
+
+.sec03_pricelist tbody .price_intro {
+    text-align: right;
+}
+
+/* ***********************メディアクエリ********************* */
+@media screen and (max-width:393px){
+    body .stayPlanContainer_01 {
+    width: 380px;
+}
+
+body .stayPlanContainer_01 header{
+    margin-bottom: 50px;
+}
+
+body .stayPlanContainer_01 header h1{
+    font-size: 80px;
+}
+
+.swiper{
+    width: 380px;
+    height: auto;
+}
+
+.swiper-slide img{
+    border-radius: 40px;
+}
+
+.stayPlanContainer_02 {
+    width: 380px;
+    /* border: 1px solid red; */
+}
+
+.stayPlanContainer_02 h2{
+    width: 380px;
+    font-size: 60px;
+    border: 1px solid brack;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.stayPlanContainer_02 h2.camp_Area{
+    text-align: center;
+    margin: 0 auto;    
+    }
+
+.glampingArea_introduce,
+.campArea_introduce,
+.bungalowArea_introduce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glumping_intro_imgBox,
+.camp_intro_imgBox,
+.bungalow_intro_imgBox {
+    width: 300px;
+    height: 300px;
+    /* border: 5px solid black; */
+    /* border-radius: 80px; */
+}
+
+.glumping_intro_img,
+.camp_intro_img,
+.bungalow_intro_img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* border: 1px solid red; */
+    border-radius: 40px;
+}
+
+.sec01_stayPlan .normal {
+    width: 380px;
+    height: auto;
+    font-size: 16px;
+    /* border: 1px solid black; */
+    margin: 16px auto;
+    text-align: center
+}
+
+.sec01_stayPlan .glampingArea_introduce .normal,
+.sec01_stayPlan .bungalowArea_introduce .normal{
+    order: 2;
+}
+
+
+.tegaki_tategaki_glumping{
+    position: static;
+    position: relative;
+    left: 120px;
+    bottom: 480px;
+    }
+
+.tegaki_tategaki_glumping p{
+   font-size: 20px;
+   /* margin: 0 ; */
+}
+
+.tegaki_tategaki_camp{
+    position: static;
+    position: relative;
+    right: 120px;
+    bottom: 480px;
+    }
+
+.tegaki_tategaki_camp p{
+    font-size: 20px;
+    /* margin: 0 ; */
+}
+
+.tegaki_tategaki_bungalow{
+    position: static;
+    position: relative;
+    left: 120px;
+    bottom: 480px
+  }
+
+  .tegaki_tategaki_bungalow p{
+    font-size: 20px;
+    /* margin: 0 ; */
+  }
+
+.stayPlanContainer_03 .sec02_sevralMenu {
+    width: 393px;
+    margin-bottom: 50px;
+}
+
+.sec02_sevralMenu h3 {
+    width: 380px;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.stayPlan_slider {
+    width: 100%; /* 幅を100%に変更して親要素に合わせる */
+    height: auto; /* 高さを自動調整 */
+    max-height: 500px; /* 必要に応じて最大高さを設定 */
+}
+
+/* 個別のスライドサイズ調整 */
+.stayPlan_slide.swiper-slide {
+    width: 200px;
+    height: auto; /* 高さを自動調整 */
+    max-height: 380px; /* 高さの最大値を設定 */
+    border-radius: 30px;
+}
+
+/* 画像コンテナのサイズ調整 */
+.stayPlan_slide .specialPlan_img {
+    width: 85%; /* 親要素に対する比率で設定 */
+    height: auto; /* アスペクト比を維持 */
+    aspect-ratio: 1 / 1; /* 正方形を維持 */
+    max-height: 160px; /* 高さの上限 */
+    border-radius: 20px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.stayPlan_slide .specialPlan_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* テキスト部分の調整 */
+.stayPlan_slider .specialPlan_letter {
+    font-size: 14px; /* フォントサイズ縮小 */
+    padding: 5px 8px; /* パディング調整 */
+    margin-bottom: 10px; /* 下マージン追加 */
+    line-height: 1.3; /* 行間調整 */
+}
+
+
+
+    .stayPlanContainer_04 {
+        width: 400px;
+          }
+    
+    
+    
+    .stayPlanContainer_04 h2.price {
+        font-size: 80px;
+       
+    }
+    
+    .sec03_pricelist table {
+        width: 380px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    
+   
+    
+    .sec03_pricelist th {
+        text-align: left;
+    }
+    
+    .sec03_pricelist tbody .price_intro {
+        text-align: right;
+} 
+
+}
