@@ -2,6 +2,8 @@
 
 :root {
     --mainColor: #e6f0f5;
+    --subColor: #4c626c;
+    --accentColor: #acf3e4;
 }
 
 body {
@@ -34,14 +36,20 @@ header {
 
         .dlSeparate {
             flex-basis: 47%;
-            background-color: var(--mainColor);
+            /* background-color: var(--mainColor); */
             padding: 1rem;
             border-radius: 0.5rem;
+            border: 1px solid #ccc;
             text-align: center;
+            transition: background-color 0.3s linear;
 
             @media (width <= 768px) {
                 flex-basis: 100%;
             }
+        }
+
+        .dlSeparate:hover {
+            background-color: var(--accentColor);
         }
 
         dt {
@@ -75,11 +83,11 @@ header {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: var(--mainColor);
+    background-color: var(--subColor);
     margin-top: 2rem;
 
     p {
         font-size: 0.85rem;
-        color: grey;
+        color: white;
     }
 }
